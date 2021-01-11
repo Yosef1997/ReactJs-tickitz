@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import FirstComponent from './components/Sign-up/FirstComponent'
+import Forgetpassword from './components/Forget-password/Forgetpassword'
 
 class App extends Component{
   render(){
     return (
-      <FirstComponent />
+      <Forgetpassword />
 
     )
   }

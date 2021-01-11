@@ -96,10 +96,8 @@ class FirstComponent extends Component {
                                 </Button>
                             </span>
                         </Row>
-
-
                     </Col>
-                        </Row>
+                </Row>
             </Container>
         )
     }
