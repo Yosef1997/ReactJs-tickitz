@@ -7,7 +7,7 @@ import Eyelogo from '../../assets/eye 1eye1.jpg'
 import Googlelogo from '../../assets/Google-logo.jpg'
 import Facebooklogo from '../../assets/fb-logo.jpg'
 
-class FirstComponent extends Component {
+class Signup extends Component {
     render() {
         return (
             <Container fluid>
@@ -103,4 +103,4 @@ class FirstComponent extends Component {
     }
 }
 
-export default FirstComponent
+export default Signup

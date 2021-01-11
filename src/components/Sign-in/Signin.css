@@ -10,20 +10,21 @@
    background-repeat: no-repeat;
    background-size: cover;
 }
-.row1 img {
-   height: 104px;
-   width: 276px;
-   left: 112px;
-   top: 50px;
-   border-radius: 0px;
-   position: absolute;
+.row1 {
+    position: relative;
+    left: 25%;
+    top: 33%;
+    border-radius: 0px;
 }
-.row2 p {
-   position: absolute;
+.row1 img {
+    width: 400px;
+}
+.row2{
+   position: relative;
    width: 535px;
    height: 60px;
-   left: 112px;
-   top: 205px;
+   left: 22%;
+   top: 36%;
    
    font-family: Mulish;
    font-style: normal;
@@ -34,47 +35,7 @@
    
    color: #FFFFFF;
 }
-.row3 p {
-   position: absolute;
-   width: 555px;
-   height: 80px;
-   left: 112px;
-   top: 280px;
-   
-   font-family: Mulish;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 24px;
-   line-height: 30px;
-   
-   color: rgba(255, 255, 255, 0.7);   
-}
-.row4 {
-   position: absolute;
-   left: 112px;
-   top: 380px;
-}
-.row4 span {
-   color: white;
-   font-size: 24px;
-   font-family: 'Mulish', sans-serif;
-   align-content: center;
-   
-}
-.row4 .line {
-   border-left: 2px white solid;
-   height: 50px;
-   margin-left: 24px;
-}
-.row4 .btn1 {
-   font-size: 24px;
-   background-color: transparent;
-   height: 50px;
-   width: 50px;
-   border-radius: 50px;
-   border-color: white;
-   margin-right: 25px;
-}
+
 .password {
    display: flex;
    flex-direction: row;
@@ -102,31 +63,43 @@
    font-weight: bold;
 }
 .row6 {
-   position: absolute;
+   position: relative;
    width: auto;
    height: 33px;
-   left: 99px;
-   top: 106px;
+   left: 15%;
+   top: 10%;
 
    font-family: 'Mulish';
    font-style: normal;
    font-weight: 600;
-   font-size: 26px;
+   font-size: 48px;
    line-height: 33px;
    letter-spacing: 0.005em;
 
    color: #121212;
 }
+.row6 .p2 {
+
+    width: 85%;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.007em;
+
+    color: #AAAAAA;
+}
 form {
-   position: absolute;
-   left: 85px;
-   top: 180px;
-   width: 70%;
+   position: relative;
+   width: 80%;
+   left: 12%;
+   top: 23%;
 }
 .row7 {
-   position: absolute;
-   left: 165px;
-   top: 470px;
+   position: relative;
+   left: 32%;
+   top: 25%;
 }
 .line2 {
    width: 180px;
@@ -134,14 +107,13 @@ form {
    border: 0.5px rgb(243, 243, 243) solid;
 }
 .row8 {
-   position: absolute;
-   left: 105px;
-   top: 500px;
-}
+    position: relative;
+    left: 18%;
+    top: 25%;}
 .row9 {
-   position: absolute;
-   left: 105px;
-   top: 570px;
+   position: relative;
+   left: 0%;
+   top: 28%;
 }
 .btn-google {
    color: #A0A3BD;
@@ -179,36 +151,36 @@ form {
       left: 85px
    }
    .row6 {
-      position: relative;
-      width: auto;
-      height: 33px;
-      left: 15%;
-      top: 25%;
+        position: relative;
+        width: auto;
+        height: 33px;
+        left: 15%;
+        top: 25%;
    }
    form {
-      position: relative;
-      left: 12%;
-      top: 29%;
-      width: 80%;
-   }
-   .row7 {
-      position: relative;
-      left: 27%;
-      top: 33%;
-   }
-   .line2 {
-      width: 150px;
-      height: 0px;
-      border: 0.5px rgb(243, 243, 243) solid;
-   }
-   .row8 {
-      position: relative;
-      left: 22%;
-      top: 32%;
-   }
-   .row9 {
-      position: relative;
-      left: 0%;
-      top: 40%;
-   }
+        position: relative;
+        width: 80%;
+        left: 12%;
+        top: 42%;
+    }
+    .row7 {
+        position: relative;
+        left: 32%;
+        top: 48%;
+     }
+     .line2 {
+        width: 150px;
+        height: 0px;
+        border: 0.5px rgb(243, 243, 243) solid;
+     }
+     .row8 {
+         padding: 0%;
+         position: relative;
+         left: 18%;
+         top: 49%;}
+     .row9 {
+        position: relative;
+        left: 0%;
+        top: 50%;
+     }
 }
