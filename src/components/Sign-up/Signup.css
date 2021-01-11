@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+
+.purple-tickitz {
+   display: none;
+}
+.left {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+   height: 100vh;   
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.row1 img {
+   height: 104px;
+   width: 276px;
+   left: 112px;
+   top: 50px;
+   border-radius: 0px;
+   position: absolute;
+}
+.row2 p {
+   position: absolute;
+   width: 535px;
+   height: 60px;
+   left: 112px;
+   top: 205px;
+   
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 60px;
+   letter-spacing: 0.003em;
+   
+   color: #FFFFFF;
+}
+.row3 p {
+   position: absolute;
+   width: 555px;
+   height: 80px;
+   left: 112px;
+   top: 280px;
+   
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 30px;
+   
+   color: rgba(255, 255, 255, 0.7);   
+}
+.row4 {
+   position: absolute;
+   left: 112px;
+   top: 380px;
+}
+.row4 span {
+   color: white;
+   font-size: 24px;
+   font-family: 'Mulish', sans-serif;
+   align-content: center;
+   
+}
+.row4 .line {
+   border-left: 2px white solid;
+   height: 50px;
+   margin-left: 24px;
+}
+.row4 .btn1 {
+   font-size: 24px;
+   background-color: transparent;
+   height: 50px;
+   width: 50px;
+   border-radius: 50px;
+   border-color: white;
+   margin-right: 25px;
+}
+.password {
+   display: flex;
+   flex-direction: row;
+   border: 1px rgb(223, 221, 221) solid;
+   border-radius: 5px;
+}
+.input-password {
+   border: none;
+}
+.btn-password {
+   background-color: transparent;
+   border: none;
+}
+.btn-password:hover {
+   background-color: transparent;
+}
+.btn-join {
+   width: 400px;
+   height: 64px;
+   border: none;
+   background-color:  #5F2EEA;
+   color: white;
+   font-size: 16px;
+   font-family: 'Mulish', sans-serif;
+   font-weight: bold;
+}
+.row6 {
+   position: absolute;
+   width: auto;
+   height: 33px;
+   left: 99px;
+   top: 106px;
+
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 26px;
+   line-height: 33px;
+   letter-spacing: 0.005em;
+
+   color: #121212;
+}
+form {
+   position: absolute;
+   left: 85px;
+   top: 180px;
+}
+.row7 {
+   position: absolute;
+   left: 165px;
+   top: 470px;
+}
+.line2 {
+   width: 180px;
+   height: 0px;
+   border: 0.5px rgb(243, 243, 243) solid;
+}
+.row8 {
+   position: absolute;
+   left: 105px;
+   top: 500px;
+}
+.row9 {
+   position: absolute;
+   left: 105px;
+   top: 570px;
+}
+.btn-google {
+   color: #A0A3BD;
+   background-color: white;
+   border: 1px solid;
+   margin-left: 30px;
+   align-content: center;
+   box-shadow: 1px 1px #A0A3BD;
+}
+.btn-google:hover {
+   background-color: white;
+   color:black;
+   text-shadow: 1px rgb(221, 220, 220) ;
+}
+.btn-facebook {
+   color: #A0A3BD;
+   background-color: white;
+   border: 0.5px solid;
+   margin-left: 120px;
+   box-shadow: 1px 1px #A0A3BD;
+}
+.btn-facebook:hover {
+   background-color: white;
+   color:black;
+   text-shadow: 1px rgb(221, 220, 220) ;
+}
+@media only screen and (max-width: 576px) {
+   .left {
+      display: none;
+   }
+   .purple-tickitz {
+      display: block;
+      position: absolute;
+      top: 30px;
+      left: 85px
+   }
+}
