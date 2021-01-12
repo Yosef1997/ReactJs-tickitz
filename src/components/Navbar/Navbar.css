@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.btn-signup-mobile {
+    display: none;
+}
+.nav-mobile {
+    display: none;
+}
+.search-mobile {
+    display: none;
+}
+.input-search-mobile {
+    border: none;
+}
+.input-search-web {
+    border: none;
+}
+.search-web {
+    border: 1px rgb(192, 190, 190) solid;
+    border-radius: 5px;
+}
+.btn-search {
+    background-color: white;
+    border: none;
+}
+.btn-search:hover {
+    background-color: whitesmoke;
+    border: none;
+}
+.btn-signup {
+    color: white;
+    background-color: #5F2EEA;
+    border: none;
+}
+.btn-signup:hover {
+    color: #5F2EEA;
+    background-color: whitesmoke;
+    border: none;
+    font-weight: bold;
+}
+p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color:gray;
+    font-family: 'Mulish', sans-serif;
+}
+.navlink {
+    color: black;
+    font-size: 18px;
+    font-family: 'Mulish',sans-serif;
+    font-weight: bold;
+    margin-right: 50px;
+}
+@media only screen and (max-width: 576px) {
+    .btn-signup-mobile {
+        display: block;
+        background-color: #5F2EEA;
+        border: none;
+    }
+    .btn-signup-mobile:hover {
+        background-color: whitesmoke;
+        font-weight: bold;
+        color: #5F2EEA;
+        border: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    .search-mobile {
+        display: flex;
+        margin-top: 20px;
+        border: 1px rgb(192, 190, 190) solid;
+        border-radius: 5px;
+    }
+    .nav-web {
+        display: none;
+    }
+}

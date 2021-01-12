@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import Forgetpassword from './components/Forget-password/Forgetpassword'
+import Navbar from './components/Navbar/Navbar'
 
 class App extends Component{
   render(){
     return (
-      <Forgetpassword />
+      <Navbar />
 
     )
   }
