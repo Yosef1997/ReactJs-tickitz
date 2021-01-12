@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.h3 {
+    font-family: 'Mulish',sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+.btn-book {
+    background-color: #5F2EEA;
+    border: #5F2EEA;
+}
+.btn-add {
+    background-color:white;
+    border-color: #5F2EEA;
+    color: #5F2EEA;;
+}
+.btn-add:hover {
+    background-color: #5F2EEA;
+    border-color: #5F2EEA;
+    color:whitesmoke;
+}
+.btn-book:hover {
+    background-color: whitesmoke;
+    border-color: #5F2EEA;
+    color: #5F2EEA;
+}

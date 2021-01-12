@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.col1 {
+    text-align: center;
+}
+.poster {
+    Width: 332px;
+    Height: 400px;
+    padding: 30px;
+    border: 0.1px rgb(218, 215, 215) solid;
+    border-radius: 10px;    
+}
+.col2 .detail1 p {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 16px;
+}
+.col2 .detail2 p {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 16px;
+}
+.col2 h5 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.col2 .Synopsis p {
+    font-family: 'Mulish', sans-serif;
+    text-align: start;
+    font-size: 16px;
+}
+.col2 h3 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+}
+.col3 p {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 36px;
+}
+.col3 .dropdown{
+    justify-content: space-evenly;
+    
+}
+.col3 .btn-dropdown {
+    background-color: whitesmoke;
+    width: 200px;
+    color: black;
+    text-align: center;
+}
+.col3 .btn-dropdown img{
+    padding-bottom: 3px;
+    margin-right: 5px;
+}
+.col4 .btn-time {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 12px;
+    box-sizing: content-box;
+    margin-right: 0px;
+}
+.col4 {
+    border: solid;
+    padding: 0;
+}
+.row8 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    color: #5F2EEA;
+}
+@media only screen and (max-width: 576px) {
+    .col2 {
+        padding: 20px;
+    }
+}
