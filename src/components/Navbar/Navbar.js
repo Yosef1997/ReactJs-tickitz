@@ -8,7 +8,7 @@ class Navbar extends Component {
     render() {
         return (
             <Container fluid>
-                <NavbarBrowser collapseOnSelect expand="lg" bg="light" variant="light">
+                <NavbarBrowser collapseOnSelect expand="lg" bg="white" variant="light">
                     <NavbarBrowser.Brand href="#home"><img src={Brand} alt="..." /></NavbarBrowser.Brand>
                     <NavbarBrowser.Toggle aria-controls="responsive-navbar-nav" />
                     <NavbarBrowser.Collapse id="responsive-navbar-nav">

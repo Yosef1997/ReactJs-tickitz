@@ -7,6 +7,7 @@
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     color: #6E7191;
+    text-align: start;
 }
 
 .row2 .heading {
@@ -19,6 +20,7 @@
     font-family: 'Mulish', sans-serif;
     font-size: 14px;
     color: #6E7191;
+    text-align: start;
 }
 .row3 .heading {
     font-family: 'Mulish', sans-serif;
@@ -44,6 +46,12 @@
 }
 .row4 span p{
     margin-left: 5px;
+}
+.row5 p {
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    color: #6E7191;
 }
 @media only screen and (max-width: 576px) {
     .row2 {

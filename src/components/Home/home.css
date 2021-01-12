@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.col1{
+    text-align: center;
+    padding-top: 12%;
+}
+.col1 p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+.col1 h1{
+    font-family: 'Mulish', sans-serif;
+    color: #5F2EEA;
+}
+.col2 {
+    text-align: center;
+}
+.col3 p {
+    font-size: 16px;
+    font-family: 'Mulish',sans-serif;
+    color: #5F2EEA;
+    font-weight: bolder;
+    text-align: end;
+}
+.col3 h4{
+    font-family: 'Mulish',sans-serif;
+    color: #5F2EEA;
+    text-align: start;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.col4 {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    width: 100%;
+}
+.col4 div {
+    padding: 20px;
+    margin: 5px;
+}
+.col6 {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    width: 100%;
+}
+.col6 div {
+    margin-right: 20px;
+}
+.col6 button {
+    background-color: white;
+    border: 1px #5F2EEA solid;
+    color: #5F2EEA;
+    width: 6rem;
+}
+.col6 button:hover {
+    background-color:#5F2EEA;
+    border: 1px #5F2EEA solid;
+    color:white;
+}
+.col7 {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    width: 100%;
+}
+.col7 div {
+    margin-right: 20px;
+}
+.title {
+    margin-top: 5px;
+    width: 100%;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center
+}
+.genre{
+    font-family: 'Mulish', sans-serif;
+    font-size: 12px;
+    color: gray; 
+    text-align: center;
+}
+.btn-details {
+    background-color: white;
+    border: 1px #5F2EEA solid;
+    color:#5F2EEA;
+    width: 80%;
+    margin-left: 10.5%;
+}
+.btn-details:hover {
+    background-color:#5F2EEA;
+    border: 1px #5F2EEA solid;
+    color:white;
+}
+.col8 div h5 {
+    font-family: 'Mulish',sans-serif;
+    color: #4E4B66;
+    text-align: center;
+}
+.col8 div h1 {
+    font-family: 'Mulish',sans-serif;
+    color: #5F2EEA;
+    text-align: center;
+    font-weight: bolder;
+}
+.col8 .mobile {
+    justify-content: center;
+}
+.lastrow {
+    border: 0.1px #c4c2ce solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #c4c2ce;
+    padding: 40px;
+    margin: 10px;
+}
+.btn-join {    
+    border:  #5F2EEA;
+    background-color:  #5F2EEA;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+.btn-join:hover {
+    background-color:  whitesmoke;
+    color: #5F2EEA;
+}
+@media only screen and (max-width: 576px) {
+    .btn-join {
+        width: 100%;
+        margin-top: 10px;
+        height: 40px;
+        border: none;
+        background-color:  #5F2EEA;
+        color: white;
+        font-size: 16px;
+        font-family: 'Mulish', sans-serif;
+        font-weight: bold;
+    }
+}

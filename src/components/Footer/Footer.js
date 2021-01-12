@@ -18,7 +18,7 @@ class Footer extends Component {
                 <Row>
                     <Col md={4} className="row1">
                         <img src={Brand} alt="..." class="brand" />
-                        <p className="mt-3">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+                        <p className="mt-3 text-left">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
                     </Col>
                     <Col md={2} className="row2">
                         <h1 className="heading">Explore</h1>
@@ -51,6 +51,11 @@ class Footer extends Component {
                             <img src={Youtube} alt="..." />
                             <p>Tickitz Cinema id</p>
                         </span>
+                    </Col>    
+                </Row>
+                <Row>
+                    <Col className="row5">
+                        <p>© 2020 Tickitz. All Rights Reserved.</p>
                     </Col>
                 </Row>
             </Container>
