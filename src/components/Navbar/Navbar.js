@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Navbar.css'
-import { Navbar as NavbarBrowser, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap'
+import { Navbar as NavbarBrowser, Nav, NavDropdown, FormControl, Button, Container } from 'react-bootstrap'
 import Brand from '../../assets/tickitzpurple.png'
 import Search from '../../assets/searchicon.png'
 import { Link } from 'react-router-dom'
@@ -13,10 +13,10 @@ class Navbar extends Component {
                     <NavbarBrowser.Toggle aria-controls="responsive-navbar-nav" />
                     <NavbarBrowser.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <Form className="search-mobile">
+                            <div className="search-mobile">
                                 <FormControl type="text" placeholder="Search" className="input-search-mobile sm-2" />
                                 <Button type="submit" className="btn-search"><img src={Search} alt=".." /></Button>{' '}
-                            </Form>
+                            </div>
                             <Nav.Link href="#Movies" className="navlink">Movies</Nav.Link>
                             <Nav.Link href="#Cinemas" className="navlink">Cinemas</Nav.Link>
                             <Nav.Link href="#Buy-Ticket" className="navlink">Buy Ticket</Nav.Link>

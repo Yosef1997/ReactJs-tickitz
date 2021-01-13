@@ -7,6 +7,8 @@ import Forgetpass from './components/Forget-password/Forgetpassword'
 import Movie from './components/Moviedetail/Index'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import SeatOrder from './components/Seat-order/SeatOrder'
+import Orderpage from './components/Orderpage/Orderpage'
 
 
 class App extends Component{
@@ -19,9 +21,10 @@ class App extends Component{
           <Route path="/Sign-in" component={Signin} />
           <Route path="/Forgetpass" component={Forgetpass} />
           <Route path="/movie" component={Movie} />
+          <Route path="/order" component={Orderpage} />
         </Switch>
       </BrowserRouter>
-    
+      // <Orderpage />
 
 
     )

@@ -8,6 +8,7 @@ import Calender from '../../assets/calender-icon.png'
 import Location from '../../assets/location.png'
 import Cinemacard from '../Cinemacard/Cinemacard'
 import cinemaList from '../dummy/CinemaList'
+// import { Link } from 'react-router-dom'
 
 export default class Index extends Component {
     state = {

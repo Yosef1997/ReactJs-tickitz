@@ -5,6 +5,7 @@ import Ebv from '../../assets/ebv.jpg'
 // import Cineone21 from '../../assets/cineone210.jpg'
 // import Hiflix from '../../assets/hiflix.jpg'
 import CinemaList from '../dummy/CinemaList'
+import { Link } from 'react-router-dom'
 
 export default class Cinemacard extends Component {
     render() {
@@ -20,31 +21,35 @@ export default class Cinemacard extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={3} className="p-2">
+                        <Col className="p-2">
                             08:30am
                         </Col>
-                        <Col md={3} className="p-2">
+                        <Col className="p-2">
                             10:30am
                         </Col>
-                        <Col md={3} className="p-2">
+                        <Col className="p-2">
                             12:00pm
                         </Col>
-                        <Col md={3} className="p-2">
-                            02:00pm
-                        </Col>
-                        <Col md={3} className="p-2">
-                            08:30am
-                        </Col>
-                        <Col md={3} className="p-2">
-                            10:30am
-                        </Col>
-                        <Col md={3} className="p-2">
-                            12:00pm
-                        </Col>
-                        <Col md={3} className="p-2">
+                        <Col className="p-2">
                             02:00pm
                         </Col>
                     </Row>
+                    <Row>
+                        <Col className="p-2">
+                            08:30am
+                        </Col>
+                        <Col className="p-2">
+                            10:30am
+                        </Col>
+                        <Col className="p-2">
+                            12:00pm
+                        </Col>
+                        <Col className="p-2">
+                            02:00pm
+                        </Col>
+                    </Row>
+
+                    
                     <Row className="mt-3">
                         <Col>
                             Price
@@ -55,7 +60,7 @@ export default class Cinemacard extends Component {
                     </Row>
                     <Row className="mt-3">
                         <Col className="text-center">
-                            <Button className="btn-book">Book Now</Button>
+                        <Link to="/order"><Button className="btn-book">Book Now</Button></Link>
                         </Col>
                         <Col className="text-center">
                             <Button className="btn-add">Add to Cart</Button>
