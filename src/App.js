@@ -24,7 +24,6 @@ class App extends Component{
           <Route path="/order" component={Orderpage} />
         </Switch>
       </BrowserRouter>
-      // <Orderpage />
 
 
     )
