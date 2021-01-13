@@ -16,24 +16,24 @@ class Footer extends Component {
         return (
             <Container className="container">
                 <Row>
-                    <Col md={4} className="row1">
+                    <Col md={4} className="footer-col1">
                         <img src={Brand} alt="..." class="brand" />
                         <p className="mt-3 text-left">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
                     </Col>
-                    <Col md={2} className="row2">
+                    <Col md={2} className="footer-col2">
                         <h1 className="heading">Explore</h1>
                         <p>Cinemas</p>
                         <p>Movies List</p>
                         <p>My Ticket</p>
                         <p>Notification</p>
                     </Col>
-                    <Col md={3} className="row3">
+                    <Col md={3} className="footer-col3">
                         <h1 className="heading">Our Sponsor</h1>
                         <img src={Ebv} alt="..." class="Ebv" />
                         <img src={Cineone21} alt="..." class="Cineone21" />
                         <img src={Hiflix} alt="..." class="Hiflix" />
                     </Col>
-                    <Col md={3} className="row4">
+                    <Col md={3} className="footer-col4">
                         <h1 className="heading">Follow Us</h1>
                         <span>
                             <img src={Facebook} alt="..." />
@@ -54,7 +54,7 @@ class Footer extends Component {
                     </Col>    
                 </Row>
                 <Row>
-                    <Col className="row5">
+                    <Col className="footer-col5">
                         <p>© 2020 Tickitz. All Rights Reserved.</p>
                     </Col>
                 </Row>

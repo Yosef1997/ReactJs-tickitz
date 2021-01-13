@@ -1,71 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
-.col1{
+.home-col1{
     text-align: center;
     padding-top: 12%;
 }
-.col1 p{
+.home-col1 p{
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
 }
-.col1 h1{
+.home-col1 h1{
     font-family: 'Mulish', sans-serif;
     color: #5F2EEA;
+    font-weight: bolder;
+    font-size: 48px;
 }
-.col2 {
+.home-col2 {
     text-align: center;
 }
-.col3 p {
-    font-size: 16px;
+.home-col3 p {
+    font-size: 18px;
     font-family: 'Mulish',sans-serif;
     color: #5F2EEA;
     font-weight: bolder;
-    text-align: end;
 }
-.col3 h4{
-    font-family: 'Mulish',sans-serif;
-    color: #5F2EEA;
-    text-align: start;
-    text-decoration: underline;
-    font-weight: bolder;
-}
-.col4 {
+
+.home-col4 {
     display: flex;
     flex-direction: row;
     overflow: auto;
     width: 100%;
 }
-.col4 div {
+.home-col4 div {
     padding: 20px;
     margin: 5px;
 }
-.col6 {
+.home-col6 {
     display: flex;
     flex-direction: row;
     overflow: auto;
     width: 100%;
 }
-.col6 div {
+.home-col6 div {
     margin-right: 20px;
 }
-.col6 button {
+.home-col6 button {
     background-color: white;
     border: 1px #5F2EEA solid;
     color: #5F2EEA;
     width: 6rem;
 }
-.col6 button:hover {
+.home-col6 button:hover {
     background-color:#5F2EEA;
     border: 1px #5F2EEA solid;
     color:white;
 }
-.col7 {
+.home-col7 {
     display: flex;
     flex-direction: row;
     overflow: auto;
     width: 100%;
 }
-.col7 div {
+.home-col7 div {
     margin-right: 20px;
 }
 .title {
@@ -94,18 +89,22 @@
     border: 1px #5F2EEA solid;
     color:white;
 }
-.col8 div h5 {
+.home-col8 .input-email {
+    width: 30%;
+}
+.home-col8 div h5 {
     font-family: 'Mulish',sans-serif;
     color: #4E4B66;
     text-align: center;
 }
-.col8 div h1 {
+.home-col8 div h1 {
     font-family: 'Mulish',sans-serif;
     color: #5F2EEA;
     text-align: center;
     font-weight: bolder;
 }
-.col8 .mobile {
+.home-col8 .home-mobile {
+    display: flex;
     justify-content: center;
 }
 .lastrow {
@@ -115,28 +114,37 @@
     padding: 40px;
     margin: 10px;
 }
-.btn-join {    
+.home-col8 .btn-join {    
     border:  #5F2EEA;
     background-color:  #5F2EEA;
     color: white;
     font-size: 16px;
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
+    height: 39px;
+    width: 10%;
 }
 .btn-join:hover {
     background-color:  whitesmoke;
     color: #5F2EEA;
 }
 @media only screen and (max-width: 576px) {
-    .btn-join {
+    .home-col8 .input-email {
         width: 100%;
-        margin-top: 10px;
-        height: 40px;
-        border: none;
+        margin-bottom: 10px;
+    }
+    .home-col8 .home-mobile {
+        display: block;
+        justify-content: center;
+    }
+    .home-col8 .btn-join {    
+        border:  #5F2EEA;
         background-color:  #5F2EEA;
         color: white;
         font-size: 16px;
         font-family: 'Mulish', sans-serif;
         font-weight: bold;
+        height: 39px;
+        width: 100%;
     }
 }

@@ -3,40 +3,40 @@
 .container {
     margin-top: 50px;
 }
-.row1 {
+.footer-col1 {
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     color: #6E7191;
     text-align: start;
 }
 
-.row2 .heading {
+.footer-col2 .heading {
     font-family: 'Mulish', sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
 
-.row2 p {
+.footer-col2 p {
     font-family: 'Mulish', sans-serif;
     font-size: 14px;
     color: #6E7191;
     text-align: start;
 }
-.row3 .heading {
+.footer-col3 .heading {
     font-family: 'Mulish', sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
-.row3 img {
+.footer-col3 img {
     display: block;
     margin-bottom: 15px;
 }
-.row4 .heading {
+.footer-col4 .heading {
     font-family: 'Mulish', sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
-.row4 span{
+.footer-col4 span{
     font-family: 'Mulish', sans-serif;
     font-size: 14px;
     color: #6E7191;
@@ -44,34 +44,34 @@
     margin-bottom: 15px;
     height: 22px;
 }
-.row4 span p{
+.footer-col4 span p{
     margin-left: 5px;
 }
-.row5 p {
+.footer-col5 p {
     font-size: 12px;
     font-family: 'Mulish', sans-serif;
     text-align: center;
     color: #6E7191;
 }
 @media only screen and (max-width: 576px) {
-    .row2 {
+    .footer-col2 {
         margin-bottom: 20px;
     }
-    .row2 p {
+    .footer-col2 p {
         display: inline;
     }
-    .row3 {
+    .footer-col3 {
         margin-bottom: 20px;
     }
-    .row3 img {
+    .footer-col3 img {
         display: inline;
         margin-right: 20px;
         height: 30px;
     }
-    .row4 span p {
+    .footer-col4 span p {
         display: none;
     }
-    .row4 span {
+    .footer-col4 span {
         display: inline;
         margin-right: 25px;
     }

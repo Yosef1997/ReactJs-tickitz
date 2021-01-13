@@ -6,47 +6,59 @@ import Purplelogo from '../../assets/tickitzpurple.png'
 import Eyelogo from '../../assets/eye 1eye1.jpg'
 import Googlelogo from '../../assets/Google-logo.jpg'
 import Facebooklogo from '../../assets/fb-logo.jpg'
-
+import { Link } from 'react-router-dom'
 class Signup extends Component {
     render() {
         return (
             <Container fluid>
                 <Row>
                     <Col className="left" md={7}>
-                        <Row className="row1">
-                            <img src={Logo} className='white-tickitz' alt='...' />
+                        <Row>
+                            <Col className="signup1">
+                                <img src={Logo} className='white-tickitz' alt='...' />
+                            </Col>
                         </Row>
-                        <Row className="row2">
-                            <p>Lets build your account</p>
+                        <Row>
+                            <Col className="signup2">
+                                <p>Lets build your account</p>
+                            </Col>
                         </Row>
-                        <Row className="row3">
-                            <p className="">To be a loyal moviegoer and access all of features,your details are required.</p>
+                        <Row>
+                            <Col className="signup3">
+                                <p className="">To be a loyal moviegoer and access all of features,your details are required.</p>
+                            </Col>
                         </Row>
-                        <Row className="row4 d-flex flex-column">
-                            <span>
-                                <Button className="btn1" href="#">1</Button>
-                                Fill your additional details
-                            </span>
-                            <Row className="line"></Row>
-                            <span>
-                                <Button className="btn1" href="#">2</Button>
-                                Activate your account
-                            </span>
-                            <Row className="line"></Row>
-                            <span>
-                                <Button className="btn1" href="#">3</Button>
-                                Done
-                            </span>
+                        <Row>
+                            <Col className="row4 d-flex flex-column">
+                                <span>
+                                    <Button className="btn1" href="#">1</Button>
+                                    Fill your additional details
+                                </span>
+                                <Row className="line"></Row>
+                                <span>
+                                    <Button className="btn1" href="#">2</Button>
+                                    Activate your account
+                                </span>
+                                <Row className="line"></Row>
+                                <span>
+                                    <Button className="btn1" href="#">3</Button>
+                                    Done
+                                 </span>
+                            </Col>
                         </Row>
                     </Col>
                     <Col classname="right" md={5}>
-                        <Row className="row5">
-                            <img src={Purplelogo} className='purple-tickitz' alt='...' />
+                        <Row>
+                            <Col className="signup5">
+                                <img src={Purplelogo} className='purple-tickitz' alt='...' />
+                            </Col>
                         </Row>
-                        <Row className="row6">
-                            <p>Fill your additional details</p>
+                        <Row className="mt-5 pt-5">
+                            <Col className="signup6">
+                                <p>Fill your additional details</p>
+                            </Col>
                         </Row>
-                        <Form>
+                        <div>
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" />
@@ -67,34 +79,42 @@ class Signup extends Component {
                             <Button className="btn-join" type="submit">
                                 Join for free now
                             </Button>
-                        </Form>
-                        <Row className="row7">
-                            <p>Do you already have an account?
-                                <span>
-                                    <a className="ml-2" href="./sign-in/index.html">Log in</a>
-                                </span>
-                            </p>
+                        </div>
+                        <Row>
+                            <Col className="sigup7">
+                                <p>Do you already have an account?
+                                    <span>
+                                        <Link to="/Sign-in">Log in</Link>
+                                    </span>
+                                </p>
+                            </Col>
                         </Row>
-                        <Row className="row8">
-                            <span className="d-flex flex-row">
-                                <hr className="line2"></hr>
+                        <Row>
+                            <Col className="signup8">
+                                <span className="d-flex flex-row">
+                                    <hr className="line2"></hr>
                                     <p className="ml-2 mr-2 pt-1">Or</p>
-                                <hr className="line2"></hr>
-                            </span>
+                                    <hr className="line2"></hr>
+                                </span>
+                            </Col>
                         </Row>
-                        <Row className="row9 d-flex flex-row justify-content-around">
-                            <span>                                    
-                                <Button className="btn-google" type="submit">
-                                    <img src={Googlelogo} alt="..." />
+                        <Row>
+                            <Col className="signup9">
+                                <span>
+                                    <Button className="btn-google" type="submit">
+                                        <img src={Googlelogo} alt="..." />
                                     Google
-                                </Button>
-                            </span>
-                            <span>
-                                <Button className="btn-facebook" type="submit">
-                                    <img src={Facebooklogo} alt="..." />
+                                    </Button>
+                                </span>
+                            </Col>
+                            <Col>
+                                <span>
+                                    <Button className="btn-facebook" type="submit">
+                                        <img src={Facebooklogo} alt="..." />
                                     Facebook
-                                </Button>
-                            </span>
+                                    </Button>
+                                </span>
+                            </Col>
                         </Row>
                     </Col>
                 </Row>

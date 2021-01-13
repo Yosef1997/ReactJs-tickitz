@@ -7,8 +7,12 @@ import Spiderman2 from '../../assets/Rectangle119spiderman.png'
 import Calender from '../../assets/calender-icon.png'
 import Location from '../../assets/location.png'
 import Cinemacard from '../Cinemacard/Cinemacard'
+import cinemaList from '../dummy/CinemaList'
 
 export default class Index extends Component {
+    state = {
+        cinemaList: cinemaList
+    }
     render() {
         return (
             <div>
@@ -101,26 +105,24 @@ export default class Index extends Component {
                         </Col>
                     </Row>
                     <Row className="p-5">
-                        <Col md={4}>
-                            <Cinemacard />
-                        </Col>
-                        <Col md={4}>
-                            <Cinemacard />
-                        </Col>
-                        <Col md={4}>
-                            <Cinemacard />
-                        </Col>
+                        {this.state.cinemaList.map((item, index)=>{
+                            return(
+                                <Col md={4}>
+                                    <Cinemacard data={item} />
+                                </Col>
+                            )
+                        })
+                        }
                     </Row>
                     <Row className="p-5">
-                        <Col md={4}>
-                            <Cinemacard />
-                        </Col>
-                        <Col md={4}>
-                            <Cinemacard />
-                        </Col>
-                        <Col md={4}>
-                            <Cinemacard />
-                        </Col>
+                        {this.state.cinemaList.map((item, index)=>{
+                            return(
+                                <Col md={4}>
+                                    <Cinemacard data={item} />
+                                </Col>
+                            )
+                        })
+                        }
                     </Row>
                     <Row className="row8 p-5 text-center">
                         <Col>

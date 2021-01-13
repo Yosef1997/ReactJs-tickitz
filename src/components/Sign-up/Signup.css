@@ -1,7 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
+.left {
+   padding-left: 10%;
+   padding-top: 5%;
+}
 
-.purple-tickitz {
+.signup2 p{
+   font-family: 'Mulish';
+   font-size: 48px;
+   text-align: left;
+   color: white;
+}
+.signup3 p{
+   font-family: 'Mulish';
+   font-size: 18px;
+   text-align: left;
+   color: white;
+}
+
+.right {
+   padding-top: 50px;
+}
+.signup6 p {
+   font-family: 'Mulish';
+   font-size: 24px;
+   text-align: left;
+   color: black;
+   font-weight: bold;
+}
+/* .purple-tickitz {
    display: none;
 }
 .left {
@@ -168,47 +195,9 @@ form {
    color:black;
    text-shadow: 1px rgb(221, 220, 220) ;
 }
+*/
 @media only screen and (max-width: 576px) {
    .left {
       display: none;
    }
-   .purple-tickitz {
-      display: block;
-      position: absolute;
-      top: 30px;
-      left: 85px
-   }
-   .row6 {
-      position: relative;
-      width: auto;
-      height: 33px;
-      left: 15%;
-      top: 25%;
-   }
-   form {
-      position: relative;
-      left: 12%;
-      top: 29%;
-      width: 80%;
-   }
-   .row7 {
-      position: relative;
-      left: 27%;
-      top: 33%;
-   }
-   .line2 {
-      width: 150px;
-      height: 0px;
-      border: 0.5px rgb(243, 243, 243) solid;
-   }
-   .row8 {
-      position: relative;
-      left: 22%;
-      top: 32%;
-   }
-   .row9 {
-      position: relative;
-      left: 0%;
-      top: 40%;
-   }
-}
+}      

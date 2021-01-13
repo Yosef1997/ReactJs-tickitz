@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
 
-.purple-tickitz {
+.signin-col3 {
    display: none;
 }
 .left {
@@ -10,22 +10,19 @@
    background-repeat: no-repeat;
    background-size: cover;
 }
-.row1 {
-    position: relative;
-    left: 25%;
-    top: 33%;
-    border-radius: 0px;
+.signin-col1 {
+   padding-left: 10%;
+   padding-top: 25%;
 }
-.row1 img {
+.signin-col1 img {
     width: 400px;
 }
-.row2{
-   position: relative;
+.signin-col2 {
+   padding-left: 0%;
+}
+.signin-col2 p{
    width: 535px;
-   height: 60px;
-   left: 22%;
-   top: 36%;
-   
+   height: 60px;   
    font-family: Mulish;
    font-style: normal;
    font-weight: bold;
@@ -35,7 +32,18 @@
    
    color: #FFFFFF;
 }
-
+.signin-col4 {
+   display: block;
+   font-size: 16px;
+   text-align: left;
+   font-family: 'Mulish';
+   padding-left: 32px;
+   padding-top: 32px;
+}
+.signin-col4 .h3 {
+   color: black;
+   text-align: left;
+}
 .password {
    display: flex;
    flex-direction: row;
@@ -62,55 +70,7 @@
    font-family: 'Mulish', sans-serif;
    font-weight: bold;
 }
-.row6 {
-   position: relative;
-   width: auto;
-   height: 33px;
-   left: 15%;
-   top: 10%;
-
-   font-family: 'Mulish';
-   font-style: normal;
-   font-weight: 600;
-   font-size: 48px;
-   line-height: 33px;
-   letter-spacing: 0.005em;
-
-   color: #121212;
-}
-.row6 .p2 {
-
-    width: 85%;
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.007em;
-
-    color: #AAAAAA;
-}
-form {
-   position: relative;
-   width: 80%;
-   left: 12%;
-   top: 23%;
-}
-.row7 {
-   position: relative;
-   left: 32%;
-   top: 25%;
-}
-.line2 {
-   width: 180px;
-   height: 0px;
-   border: 0.5px rgb(243, 243, 243) solid;
-}
-.row8 {
-    position: relative;
-    left: 18%;
-    top: 25%;}
-.row9 {
+.signin-col7 {
    position: relative;
    left: 0%;
    top: 28%;
@@ -144,41 +104,30 @@ form {
    .left {
       display: none;
    }
-   .purple-tickitz {
+   .signin-col3 {
       display: block;
-      position: absolute;
-      top: 30px;
-      left: 85px
    }
-   .row6 {
-        position: relative;
-        width: auto;
-        height: 33px;
-        left: 15%;
-        top: 25%;
+   .signin-col3 img {
+      margin-left: 10px;
+   }
+   .signin-col4 {
+      margin-top: 50px;
+   }
+   .singnup-col3{
+      margin: 10px;
    }
    form {
         position: relative;
         width: 80%;
         left: 12%;
         top: 42%;
-    }
-    .row7 {
-        position: relative;
-        left: 32%;
-        top: 48%;
-     }
-     .line2 {
-        width: 150px;
-        height: 0px;
-        border: 0.5px rgb(243, 243, 243) solid;
-     }
-     .row8 {
-         padding: 0%;
-         position: relative;
-         left: 18%;
-         top: 49%;}
-     .row9 {
+   }
+   .line2 {
+      width: 150px;
+      height: 0px;
+      border: 0.5px rgb(243, 243, 243) solid;
+   }
+   .signin-col7 {
         position: relative;
         left: 0%;
         top: 50%;

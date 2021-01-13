@@ -18,6 +18,7 @@
 .search-web {
     border: 1px rgb(192, 190, 190) solid;
     border-radius: 5px;
+    display: inline;
 }
 .btn-search {
     background-color: white;
@@ -50,18 +51,19 @@ p {
     font-size: 18px;
     font-family: 'Mulish',sans-serif;
     font-weight: bold;
-    margin-right: 50px;
+    margin-right: 0px;
 }
 @media only screen and (max-width: 576px) {
     .btn-signup-mobile {
         display: block;
-        background-color: #5F2EEA;
+        background-color: transparent;
         border: none;
+        color: black;
     }
     .btn-signup-mobile:hover {
         background-color: whitesmoke;
         font-weight: bold;
-        color: #5F2EEA;
+        color:black;
         border: none;
     }
     .nav-mobile {

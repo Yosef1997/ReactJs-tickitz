@@ -3,13 +3,13 @@ import './Navbar.css'
 import { Navbar as NavbarBrowser, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap'
 import Brand from '../../assets/tickitzpurple.png'
 import Search from '../../assets/searchicon.png'
-
+import { Link } from 'react-router-dom'
 class Navbar extends Component {
     render() {
         return (
             <Container fluid>
                 <NavbarBrowser collapseOnSelect expand="lg" bg="white" variant="light">
-                    <NavbarBrowser.Brand href="#home"><img src={Brand} alt="..." /></NavbarBrowser.Brand>
+                    <NavbarBrowser.Brand><Link to="/"><img src={Brand} alt="..." /></Link></NavbarBrowser.Brand>
                     <NavbarBrowser.Toggle aria-controls="responsive-navbar-nav" />
                     <NavbarBrowser.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
@@ -27,7 +27,7 @@ class Navbar extends Component {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Jawa Barat</NavDropdown.Item>
                             </NavDropdown>
-                            <Button className="btn-signup-mobile " type="submit">Sign up</Button>{' '}
+                            <Link to="/sign-up"><Button className="btn-signup-mobile " type="submit">Sign up</Button>{' '}</Link>
                             <p className="nav-mobile">© 2020 Tickitz. All Rights Reserved.</p>
                         </Nav>
                         <Nav className="ml-auto nav-web">
@@ -38,11 +38,11 @@ class Navbar extends Component {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Jawa Barat</NavDropdown.Item>
                             </NavDropdown>
-                            <Form inline className="search-web">
-                                <FormControl type="text" placeholder="Search" className="input-search-web sm-2" />
-                                <Button className="mr-2 btn-search" type="submit"><img src={Search} alt=".." /></Button>{' '}                                
-                            </Form>
-                            <Button type="submit" className="btn-signup ml-2">Sign up</Button>{' '}
+                            <div className="d-flex flex-row search-web">
+                                <FormControl type="text" placeholder="Search" className="input-search-mobile sm-2" />
+                                <Button type="submit" className="btn-search"><img src={Search} alt=".." /></Button>{' '}
+                            </div>
+                            <Link to="/sign-up"><Button type="submit" className="btn-signup ml-2 p-2">Sign up</Button>{' '}</Link>
                         </Nav>
                     </NavbarBrowser.Collapse>
                 </NavbarBrowser>

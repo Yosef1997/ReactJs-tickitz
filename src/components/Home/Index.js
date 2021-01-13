@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './home.css'
-import { Container, Row, Col, Button, Card, Form, FormControl } from 'react-bootstrap'
+import { Container, Row, Col, Button, Card, FormControl } from 'react-bootstrap'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Spiderman from '../../assets/Rectanglespiderman.jpg'
@@ -12,7 +12,7 @@ import Lion2 from '../../assets/Rectangle119lion.jpg'
 import Blackwidow from '../../assets/Rectangle139blackwidow.jpg'
 import Tenet from '../../assets/Rectangle139tenet.jpg'
 import Witcher from '../../assets/Rectangle139thewitcher.jpg'
-
+import { Link } from 'react-router-dom'
 
 export default class Index extends Component {
     render() {
@@ -21,59 +21,73 @@ export default class Index extends Component {
                 <Navbar />
                 <Container>
                     <Row>
-                        <Col md className="col1">
+                        <Col md className="home-col1">
                             <p class="p1">Nearest Cinema, Newest Movie,</p>
                             <h1>Find out now!</h1>
                         </Col>
-                        <Col md className="col2">
+                        <Col md className="home-col2">
                             <img src={Spiderman} className="pt-5 mr-3" alt="..." />
                             <img src={Lion} className="pt-3 mt-1 mr-3" alt="..." />
                             <img src={Starwars} className="pt-0" alt="..." />
                         </Col>
                     </Row>
                     <Row className="mt-5">
-                        <Col className="col3 text-left">
-                            <h4>Now Showing</h4>
+                        <Col className="home-col3 text-left">
+                            <p className="text-left">Now Showing</p>
                         </Col>
-                        <Col className="col3">
-                            <p>View All</p>
+                        <Col className="home-col3">
+                            <p className="text-right">View All</p>
                         </Col>
                     </Row>
-                    <Row className="row3">
-                        <Col className="col4">
+                    <Row>
+                        <Col className="home-col4">
                             <div >
-                                <img src={Spiderman2} style={{ height: '10rem' }} className="Now-showing" alt="..." />
+                                <Link to="/movie">
+                                    <img src={Spiderman2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                </Link>
                             </div>
                             <div>
-                                <img src={Lion2} style={{ height: '10rem' }}  className="Now-showing" alt="..." />
+                                <Link to="/movie">
+                                    <img src={Lion2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                </Link>
                             </div>
                             <div>
-                                <img src={Johnwick} style={{ height: '10rem' }}  className="Now-showing" alt="..." />
+                                <Link to="/movie">
+                                    <img src={Johnwick} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                </Link>
                             </div>
                             <div>
-                                <img src={Lion2} style={{ height: '10rem' }}  className="Now-showing" alt="..." />
+                                <Link to="/movie">
+                                    <img src={Lion2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                </Link>
                             </div>
                             <div>
-                                <img src={Spiderman2} style={{ height: '10rem' }}  className="Now-showing" alt="..." />
+                                <Link to="/movie">
+                                    <img src={Spiderman2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                </Link>
                             </div>
                             <div>
-                                <img src={Lion2} style={{ height: '10rem' }}  className="Now-showing" alt="..." />
+                                <Link to="/movie">
+                                    <img src={Lion2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                </Link>
                             </div>
                             <div>
-                                <img src={Johnwick} style={{ height: '10rem' }}  className="" alt="..." />
+                                <Link to="/movie">
+                                    <img src={Johnwick} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                </Link>
                             </div>
                         </Col>
                     </Row>
                     <Row className="mt-5">
-                        <Col className="col3">
-                            <h4>Upcoming Movies</h4>
+                        <Col className="home-col3">
+                            <p className="text-left">Upcoming Movies</p>
                         </Col>
-                        <Col className="col3">
-                            <p>View All</p>
+                        <Col className="home-col3">
+                            <p className="text-right">View All</p>
                         </Col>
                     </Row>
                     <Row className="mt-3">
-                        <Col className="col6">
+                        <Col className="home-col6">
                             <div>
                                 <Button>January</Button>{' '}
                             </div>
@@ -113,7 +127,7 @@ export default class Index extends Component {
                         </Col>
                     </Row>
                     <Row className="mt-5">
-                        <Col className="col7">
+                        <Col className="home-col7">
                             <div>
                                 <Card style={{ width: '10rem' }}>
                                     <Card.Img variant="top" src={Blackwidow} />
@@ -189,21 +203,21 @@ export default class Index extends Component {
                         </Col>
                     </Row>
                     <Row className="mt-5 lastrow">
-                        <Col className="col8">
+                        <Col className="home-col8">
                             <div>
                                 <h5>Be the vanguard of the</h5>
                                 <h1>Moviegoers</h1>
                             </div>
-                            <Form inline className="mobile">
-                                <FormControl type="text" placeholder="Write your email" className=" mr-sm-2" />
+                            <div className="home-mobile">
+                                <FormControl type="text" placeholder="Write your email" className="input-email mr-sm-2" />
                                 <Button className="btn-join" type="submit">Join Now</Button>
-                            </Form>
+                            </div>
                             <div>
                                 <p class="mb-0 p2">By joining you as a Tickitz member,</p>
                                 <p class="p2">we will always send you the latest updates via email .</p>
                             </div>
                         </Col>
-                    </Row>                    
+                    </Row>
                 </Container>
                 <Footer />
             </div>
