@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.container-profil {
+    background-color: whitesmoke;
+    padding: 50px;
+}
+.profil-paper {
+    background-color: white;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.profil-left-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+.profil-left-row2 .h4 {
+    color: black;
+}
+.profil-left-row3 p{
+    font-family: 'Mulish',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4E4B66;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.rectangle1 {
+    margin: 0 auto;
+    background-color: #ae95f1;
+    height: 110px;
+    width: 240px;
+    border-radius: 10px;
+}
+.rectangle2 {
+    background-color: #5F2EEA;
+    position: absolute;
+    top: 64.5%;
+    left: 20%;
+    height: 120px;
+    width: 256px;
+    border-radius: 10px;
+}
+.rectangle2 p{
+    padding-left: 20px;
+    color: white;
+    font-family: 'Mulish',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+.rectangle2 p span{
+    color: white;
+    font-family: 'Mulish',sans-serif;
+    font-size: 10px;
+}
+.circle1 {
+    position: absolute;
+    border:white solid;
+    opacity: 20%;
+    height: 100px ;
+    width: 100px;
+    top: 59%;
+    left: 60%;
+    background-color:white;
+}
+.circle2 {
+    position: absolute;
+    border:white solid;
+    opacity: 30%;
+    height: 100px ;
+    width: 100px;
+    top: 62%;
+    left: 65%;
+    background-color:white;
+}
+.star {
+    position: absolute;
+    top: 64%;
+    left: 65%;
+}
+.progresBar1 {
+    margin: 10px 0px 30px 0px;
+    background-color: whitesmoke;
+    height: 30px;
+    border-radius: 10px;
+}
+.progresBar2 {
+    background-color: #5F2EEA;
+    height: 30px;
+    width: 20%;     
+    border-radius: 10px;
+}
+.profil-left-row4 {
+    border-bottom: 1px #dedede solid;
+}
+
+.box-order-history {
+    justify-content: space-between;
+    border: 1px #dedede solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+.box-btn-order-history {
+    justify-content: space-between;
+    border: 1px #dedede solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;}
+.orderHistory-row1 p {
+    font-size: 14px;
+    text-align: left;
+}
+.orderHistory-row1 .h4 {
+    font-size: 24px;
+    color: black;
+}

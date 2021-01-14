@@ -8,6 +8,8 @@ import Movie from './components/Moviedetail/Index'
 import Orderpage from './components/Orderpage/Orderpage'
 import Payment from './components/Payment/Payment'
 import Ticket from './components/Ticket/Ticket'
+import Profil from './components/Profil/Profil'
+import OrderHistory from './components/Order-History/orderHistory'
 
 
 class App extends Component{
@@ -23,6 +25,8 @@ class App extends Component{
           <Route path="/order" component={Orderpage} />
           <Route path="/payment" component={Payment} />
           <Route path="/ticket" component={Ticket} />
+          <Route path="/profil" component={Profil} />
+          <Route path="/orderhistory" component={OrderHistory} />
         </Switch>
       </BrowserRouter>
 
