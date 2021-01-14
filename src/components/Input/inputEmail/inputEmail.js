@@ -5,9 +5,9 @@ import './email.css'
 export default class inputEmail extends Component {
     render() {
         return (
-            <div className="p-3">
-                <Form.Control type="email" placeholder="Enter email" />
-            </div>
+            
+            <Form.Control type="email" placeholder="Enter email" />
+            
         )
     }
 }

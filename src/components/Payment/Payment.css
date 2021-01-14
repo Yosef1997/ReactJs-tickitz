@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.containerPayment{
+    background-color: whitesmoke;
+}
+
+.Payment-row1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.Payment-row2 {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.pay-detail {
+    display: flex;
+    justify-content: space-between;
+}
+.paycash{
+    color: #6B6B6B;
+    text-align: center;
+
+}
+.text-muted{
+    color: #6B6B6B;    
+    font-family: 'Mulish',sans-serif;
+    font-size: 20px;
+}
+
+.text-dark {
+    color: #000000;
+    font-family: 'Mulish',sans-serif;
+    font-size: 20px;
+}
+.Payment-row3 .line-payment {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: #A0A3BD;
+    text-align: center;
+    padding: 5px;
+}
+.Payment-row2 .Paylist {
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-pay{
+    border: 2px solid #DEDEDE;
+    Width: 146px;
+    Height: 56px;
+    border-radius: 8px;
+}
+.text-link {
+    color: #5F2EEA;
+}
+.Payment-row4 {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-previous {
+    background-color: transparent;
+    border-color: #5F2EEA;
+    color: #5F2EEA;
+    width: 250px;
+    height: 56px;
+}
+.btn-pay-your-order {
+    background-color: #5F2EEA;
+    color: white;
+    border-color: #5F2EEA;
+    width: 250px;
+    height: 56px;
+}
+.warning-box {
+    display: flex;
+    justify-content: left;
+    background-color: rgba(244, 183, 64, 0.3);
+    height: 50px;
+    text-align: center;
+    border-radius: 8px;
+}
+.warning-box .warning-text {
+    font-family: 'Mulish',sans-serif;
+    font-size: 16px;
+}
+@media only screen and (max-width: 576px) {
+    .btn-pay{
+        border: 2px solid #DEDEDE;
+        Width: 80px;
+        Height: auto;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+}

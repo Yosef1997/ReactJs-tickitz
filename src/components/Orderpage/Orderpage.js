@@ -22,11 +22,11 @@ export default class Orderpage extends Component {
                         <Col md={8}>
                             <div className="Order-row1 oreder-web">
                                 Movie Selected
-                                </div>
+                            </div>
                             <div className="Order-row2 oreder-web">
                                 <div className="w-50 pt-2">
                                     Spider-Man: Homecoming
-                                    </div>
+                                </div>
                                 <div className="w-50 text-right">
                                     <Link to="/movie"><Button className="btn-changeorder">Change Movie</Button></Link>
                                 </div>

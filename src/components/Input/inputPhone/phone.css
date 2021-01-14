@@ -1,0 +1,13 @@
+.form-phone-number span{
+    display: flex;
+    border: 0.1px #DEDEDE solid;
+    border-radius: 5px;
+}
+#dropdown-basic-button {
+    background-color: white;
+    color: #4E4B66;
+    border: none;
+}
+.inputphonenumber {
+    border: none;
+}
