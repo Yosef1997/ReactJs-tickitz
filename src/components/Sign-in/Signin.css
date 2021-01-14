@@ -60,9 +60,9 @@
 .btn-password:hover {
    background-color: transparent;
 }
-.btn-join {
+.btn-signin {
    width: 100%;
-   height: 64px;
+   height: 40px;
    border: none;
    background-color:  #5F2EEA;
    color: white;

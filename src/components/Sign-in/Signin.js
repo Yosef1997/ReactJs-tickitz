@@ -57,7 +57,7 @@ class Signin extends Component {
                                         <Form.Check type="checkbox" label="I agree to terms & conditions" />
                                     </Form.Group>
                                     <Link to="/">
-                                        <Button className="btn-join" type="submit">Sign In</Button>
+                                        <Button className="btn-signin" type="submit">Sign In</Button>
                                     </Link>
                                 </div>
                             </Col>

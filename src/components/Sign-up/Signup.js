@@ -76,7 +76,7 @@ class Signup extends Component {
                             <Form.Group controlId="formBasicCheckbox">
                                 <Form.Check type="checkbox" label="I agree to terms & conditions" />
                             </Form.Group>
-                            <Button className="btn-join" type="submit">
+                            <Button className="btn-signup" type="submit">
                                 Join for free now
                             </Button>
                         </div>
