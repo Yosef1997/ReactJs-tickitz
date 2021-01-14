@@ -1,19 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
-
+.container-orderpage {
+    background-color: whitesmoke;
+    padding: 5%;
+    width: 100%;
+}
 .Order-row1 {
     font-family: 'Mulish',sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bolder;
+
 }
 .Order-row2 {
     margin-top: 30px;
     margin-bottom: 30px;
     font-family: 'Mulish',sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
+    border: 0.1px rgb(255, 255, 255) solid;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.Order-row3 {
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 10px;
 }
 .Order-row4 {
     color: transparent;
@@ -31,19 +46,28 @@
 }
 .btn-available {
     background-color: white;
+    border-radius: 10px;
 }
 .btn-selected {
     background-color:purple;
+    border-radius: 10px;
 }
 .btn-lovenest {
     background-color: pink;
+    border-radius: 10px;
 }
 .btn-Sold {
     background-color: greenyellow;
+    border-radius: 10px;
 }
 .Order-row6 {
     display: flex;
     justify-content: space-between;
+}
+.Order-row7 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
 }
 .Order-row9 {
     display: flex;
@@ -52,13 +76,16 @@
 .Order-row9 p{
     font-family: 'Mulish',sans-serif;
     font-size: 16px;
-    color: black;
 }
 .Order-row9 .h3{
     font-family: 'Mulish',sans-serif;
     font-size: 20px;
     color: black;
     font-weight: bolder;
+}
+.Order-row9 .h4 {
+    color: #5F2EEA ;
+    font-size: 24px;
 }
 .note-web {
     display: flex;
@@ -67,48 +94,57 @@
 .note-mobile {
     display: none;
 }
-.nmobile-dropdown {
-    border: 0.1px purple solid;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
-    padding: 10px;
-}
+
 .btn-dropdown {
     background-color: transparent;
-    border-color: purple ;
-    color: purple;
+    border-color: #5F2EEA ;
+    color: #5F2EEA;
     border-radius: 10px;
 }
 .btn-addseat {
     background-color: transparent;
-    border-color: purple ;
-    color: purple;
+    border-color:#5F2EEA ;
+    color:#5F2EEA;
     border-radius: 10px;
     width: 100%;
+    height: 56px;
 }
 .btn-checkout {
-    background-color: purple;
-    border-color: purple ;
+    background-color: #5F2EEA;
+    border-color: #5F2EEA ;
     color:white;
     border-radius: 10px;
     width: 100%;
+    height: 56px;
 }
-.btn-join {    
-    border:  #5F2EEA;
-    background-color:  #5F2EEA;
-    color: white;
+.btn-changeorder {
+    border: none;
+    background-color:  whitesmoke;
+    color:#5F2EEA;
     font-size: 16px;
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
-    height: 39px;
+    height: 56px;
     width: fit-content;
 }
 .btn-changemovie {
     background-color: transparent;
     border-color: #5F2EEA;
     color: #5F2EEA;
+    width: 250px;
+    height: 56px;
+}
+.btn-checkout {
+    background-color: #5F2EEA;
+    color: white;
+    border-color: #5F2EEA;
+    width: 250px;
+    height: 56px;
+}
+.choose-seat {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 @media only screen and (max-width: 576px) {
     .oreder-web {
@@ -119,5 +155,11 @@
     }
     .note-mobile {
         display: block;
+    }
+    .btn-checkout {
+        background-color: #5F2EEA;
+        color: white;
+        border-color: #5F2EEA;
+        width: 100%;
     }
 }

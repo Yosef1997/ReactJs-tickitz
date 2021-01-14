@@ -14,7 +14,7 @@ import Facebook from '../../assets/facebook.png'
 class Footer extends Component {
     render() {
         return (
-            <Container className="container">
+            <Container fluid className="container-footer">
                 <Row>
                     <Col md={4} className="footer-col1">
                         <img src={Brand} alt="..." class="brand" />

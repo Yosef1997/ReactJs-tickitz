@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import './Signin.css'
 import Logo from '../../assets/tickitzwhite.png'
 import Purplelogo from '../../assets/tickitzpurple.png'
-import Eyelogo from '../../assets/eye 1eye1.jpg'
+import Eyelogo from '../../assets/eye.jpg'
 import Googlelogo from '../../assets/Google-logo.jpg'
 import Facebooklogo from '../../assets/fb-logo.jpg'
 import {Link} from 'react-router-dom'

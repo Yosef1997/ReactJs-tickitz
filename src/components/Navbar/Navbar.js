@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
 import './Navbar.css'
-import { Navbar as NavbarBrowser, Nav, NavDropdown, FormControl, Button, Container } from 'react-bootstrap'
+import { Navbar as NavbarBrowser, Nav, NavDropdown, FormControl, Button } from 'react-bootstrap'
 import Brand from '../../assets/tickitzpurple.png'
 import Search from '../../assets/searchicon.png'
 import { Link } from 'react-router-dom'
 class Navbar extends Component {
     render() {
         return (
-            <Container fluid>
-                <NavbarBrowser collapseOnSelect expand="lg" bg="white" variant="light">
+                <NavbarBrowser collapseOnSelect expand="lg" bg="white" variant="light" className="containerNavbar">
                     <NavbarBrowser.Brand><Link to="/"><img src={Brand} alt="..." /></Link></NavbarBrowser.Brand>
                     <NavbarBrowser.Toggle aria-controls="responsive-navbar-nav" />
                     <NavbarBrowser.Collapse id="responsive-navbar-nav">
-                        <Nav className="mr-auto">
+                        <Nav className="p-2 mr-auto">
                             <div className="search-mobile">
                                 <FormControl type="text" placeholder="Search" className="input-search-mobile sm-2" />
                                 <Button type="submit" className="btn-search"><img src={Search} alt=".." /></Button>{' '}
@@ -27,7 +26,7 @@ class Navbar extends Component {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Jawa Barat</NavDropdown.Item>
                             </NavDropdown>
-                            <Link to="/sign-up"><Button className="btn-signup-mobile " type="submit">Sign up</Button>{' '}</Link>
+                            <Link to="/sign-up" className="btn-signup-mobile">Sign up</Link>
                             <p className="nav-mobile">© 2020 Tickitz. All Rights Reserved.</p>
                         </Nav>
                         <Nav className="ml-auto nav-web">
@@ -46,7 +45,6 @@ class Navbar extends Component {
                         </Nav>
                     </NavbarBrowser.Collapse>
                 </NavbarBrowser>
-            </Container>
         )
     }
 }

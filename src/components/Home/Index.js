@@ -13,14 +13,15 @@ import Blackwidow from '../../assets/Rectangle139blackwidow.jpg'
 import Tenet from '../../assets/Rectangle139tenet.jpg'
 import Witcher from '../../assets/Rectangle139thewitcher.jpg'
 import { Link } from 'react-router-dom'
+import BtnMonth from '../button/btnMonth/BtnMonth'
 
 export default class Index extends Component {
     render() {
         return (
             <div>
                 <Navbar />
-                <Container>
-                    <Row>
+                <Container fluid className="containerHome">
+                    <Row className="bgwhite p-5">
                         <Col md className="home-col1">
                             <p class="p1">Nearest Cinema, Newest Movie,</p>
                             <h1>Find out now!</h1>
@@ -31,7 +32,7 @@ export default class Index extends Component {
                             <img src={Starwars} className="pt-0" alt="..." />
                         </Col>
                     </Row>
-                    <Row className="mt-5">
+                    <Row className="p-3 home-row3">
                         <Col className="home-col3 text-left">
                             <p className="text-left">Now Showing</p>
                         </Col>
@@ -39,7 +40,7 @@ export default class Index extends Component {
                             <p className="text-right">View All</p>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="home-row3">
                         <Col className="home-col4">
                             <div >
                                 <Link to="/movie">
@@ -78,7 +79,7 @@ export default class Index extends Component {
                             </div>
                         </Col>
                     </Row>
-                    <Row className="mt-5">
+                    <Row className="bgwhite p-3">
                         <Col className="home-col3">
                             <p className="text-left">Upcoming Movies</p>
                         </Col>
@@ -86,47 +87,10 @@ export default class Index extends Component {
                             <p className="text-right">View All</p>
                         </Col>
                     </Row>
-                    <Row className="mt-3">
-                        <Col className="home-col6">
-                            <div>
-                                <Button>January</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>February</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>March</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>April</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>May</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>June</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>July</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>August</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>September</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>October</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>November</Button>{' '}
-                            </div>
-                            <div>
-                                <Button>December</Button>{' '}
-                            </div>
-                        </Col>
+                    <Row className="bgwhite p-3">
+                        <BtnMonth />
                     </Row>
-                    <Row className="mt-5">
+                    <Row className="bgwhite p-5">
                         <Col className="home-col7">
                             <div>
                                 <Card style={{ width: '10rem' }}>
@@ -202,8 +166,8 @@ export default class Index extends Component {
                             </div>
                         </Col>
                     </Row>
-                    <Row className="mt-5 lastrow">
-                        <Col className="home-col8">
+                    <Row className="p-5 bgwhite">
+                        <Col className="home-col8 shadow">
                             <div>
                                 <h5>Be the vanguard of the</h5>
                                 <h1>Moviegoers</h1>

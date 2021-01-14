@@ -65,47 +65,38 @@ export default class Index extends Component {
                             </div>
                         </Col>
                     </Row>
-                    <Row className="mt-5">
+                    <Row className="sectionMovie-2 mt-5">
                         <Col className="col3">
                             <div>
                                 <p>Showtimes and Tickets</p>
                             </div>
                             <div className="d-flex dropdown">
                                 <Dropdown as={ButtonGroup}>
-                                    <Dropdown.Toggle className="btn-dropdown" id="dropdown-custom-1">
+                                    <Dropdown.Toggle className="btn-dropmovie" id="dropdown-custom-1">
                                         <img src={Calender} class="img-fluid" alt="..." />
                                         Date
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className="super-colors">
                                         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                                        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                                        <Dropdown.Item eventKey="3" active>
-                                            Active Item
-                                        </Dropdown.Item>
-                                        <Dropdown.Divider />
-                                        <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+                                        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>                                        
+                                        <Dropdown.Item eventKey="3">Separated link</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>{' '}
                                 <Dropdown as={ButtonGroup}>
-                                    <Dropdown.Toggle className="btn-dropdown" id="dropdown-custom-1">
+                                    <Dropdown.Toggle className="btn-dropmovie" id="dropdown-custom-1">
                                         <img src={Location} class="img-fluid" alt="..." />
                                     Location
-
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className="super-colors">
                                         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
                                         <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                                        <Dropdown.Item eventKey="3" active>
-                                            Active Item
-                                        </Dropdown.Item>
-                                        <Dropdown.Divider />
-                                        <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+                                        <Dropdown.Item eventKey="3">Separated link</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>{' '}
                             </div>
                         </Col>
                     </Row>
-                    <Row className="p-5">
+                    <Row className="sectionMovie-2 p-5">
                         {this.state.cinemaList.map((item, index)=>{
                             return(
                                 <Col md={4}>
@@ -115,7 +106,7 @@ export default class Index extends Component {
                         })
                         }
                     </Row>
-                    <Row className="p-5">
+                    <Row className="sectionMovie-2 p-5">
                         {this.state.cinemaList.map((item, index)=>{
                             return(
                                 <Col md={4}>
@@ -125,11 +116,10 @@ export default class Index extends Component {
                         })
                         }
                     </Row>
-                    <Row className="row8 p-5 text-center">
+                    <Row className="row8 p-5 sectionMovie-2 text-center">
                         <Col>
                             View All
-                        </Col>
-                       
+                        </Col>                       
                     </Row>
                 </Container>
                 <Footer />

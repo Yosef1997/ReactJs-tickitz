@@ -1,0 +1,17 @@
+.nmobile-dropdown {
+    border: 0.1px  #EFF0F7 solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+    padding: 15px;
+}
+
+.btn-dropdown {
+    background-color: whitesmoke;
+    border-color: #EFF0F7 ;
+    color:#14142B;
+    border-radius: 10px;
+    width: 100px;
+}

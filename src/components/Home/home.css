@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
+.containerHome {
+    background-color: whitesmoke;
+}
+.bgwhite {
+    background-color: white;
+}
 .home-col1{
     text-align: center;
     padding-top: 12%;
@@ -23,7 +29,9 @@
     color: #5F2EEA;
     font-weight: bolder;
 }
-
+.home-row3 {
+    background-color: whitesmoke;
+}
 .home-col4 {
     display: flex;
     flex-direction: row;
@@ -33,26 +41,6 @@
 .home-col4 div {
     padding: 20px;
     margin: 5px;
-}
-.home-col6 {
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-    width: 100%;
-}
-.home-col6 div {
-    margin-right: 20px;
-}
-.home-col6 button {
-    background-color: white;
-    border: 1px #5F2EEA solid;
-    color: #5F2EEA;
-    width: 6rem;
-}
-.home-col6 button:hover {
-    background-color:#5F2EEA;
-    border: 1px #5F2EEA solid;
-    color:white;
 }
 .home-col7 {
     display: flex;
@@ -107,12 +95,10 @@
     display: flex;
     justify-content: center;
 }
-.lastrow {
-    border: 0.1px #c4c2ce solid;
+.home-col8 {
+    height: 300px;
+    padding: 50px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px #c4c2ce;
-    padding: 40px;
-    margin: 10px;
 }
 .home-col8 .btn-join {    
     border:  #5F2EEA;

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
+
+.containerNavbar{
+    height: fit-content;
+}
 .btn-signup-mobile {
     display: none;
 }
@@ -56,13 +60,16 @@ p {
 @media only screen and (max-width: 576px) {
     .btn-signup-mobile {
         display: block;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Mulish',sans-serif;
         background-color: transparent;
         border: none;
         color: black;
     }
     .btn-signup-mobile:hover {
         background-color: whitesmoke;
-        font-weight: bold;
+        text-decoration: none;
         color:black;
         border: none;
     }

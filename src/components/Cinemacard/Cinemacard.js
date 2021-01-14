@@ -1,23 +1,23 @@
 import React, { Component } from 'react'
 import './Card.css'
-import { Container, Card, Col, Row, Button } from 'react-bootstrap'
-import Ebv from '../../assets/ebv.jpg'
-// import Cineone21 from '../../assets/cineone210.jpg'
-// import Hiflix from '../../assets/hiflix.jpg'
-import CinemaList from '../dummy/CinemaList'
+import { Card, Col, Row, Button } from 'react-bootstrap'
+// import Ebv from '../../assets/ebv.jpg'
+// // import Cineone21 from '../../assets/cineone210.jpg'
+// // import Hiflix from '../../assets/hiflix.jpg'
+// import CinemaList from '../dummy/CinemaList'
 import { Link } from 'react-router-dom'
 
 export default class Cinemacard extends Component {
     render() {
         return (           
-                <Card body className="">
+                <Card body className="CinemaCard shadow">
                     <Row>
                         <Col md={4} className="pt-4">
                             <img src={this.props.data.image} class="img-fluid" alt="..." />
                         </Col>
                         <Col md={8} className="m-0">
-                            <p className="h3 text-left text-dark p-0">ebv.id</p>
-                            <p className="h6 text-muted text-left">Whatever street No.12, South Purwokerto</p>
+                            <p className="h3 text-left text-dark p-0">{this.props.data.name}</p>
+                            <p className="h6 text-muted text-left">{this.props.data.address}</p>
                         </Col>
                     </Row>
                     <Row>
