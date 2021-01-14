@@ -7,6 +7,7 @@ import Eyelogo from '../../assets/eye.jpg'
 import Googlelogo from '../../assets/Google-logo.jpg'
 import Facebooklogo from '../../assets/fb-logo.jpg'
 import { Link } from 'react-router-dom'
+
 class Signup extends Component {
     render() {
         return (

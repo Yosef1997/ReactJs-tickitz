@@ -73,6 +73,9 @@
     width: 250px;
     height: 56px;
 }
+.btn-pay-your-order-mobile {
+    display: none;
+}
 .warning-box {
     display: flex;
     justify-content: left;
@@ -85,12 +88,31 @@
     font-family: 'Mulish',sans-serif;
     font-size: 16px;
 }
+.payment-mobile {
+    display: none;
+}
 @media only screen and (max-width: 576px) {
     .btn-pay{
         border: 2px solid #DEDEDE;
-        Width: 80px;
+        Width: fit-content;
         Height: auto;
         border-radius: 8px;
         box-sizing: border-box;
+    }
+    .payment-web {
+        display: none;
+    }
+    .payment-mobile {
+        display: flex;
+        background-color: white;
+    }
+    .btn-pay-your-order-mobile {
+        display: block;
+        background-color: #5F2EEA;
+        color: white;
+        border-color: #5F2EEA;
+        width: 250px;
+        height: 56px;
+    
     }
 }

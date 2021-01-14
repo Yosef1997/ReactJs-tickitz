@@ -7,6 +7,7 @@ import Forgetpass from './components/Forget-password/Forgetpassword'
 import Movie from './components/Moviedetail/Index'
 import Orderpage from './components/Orderpage/Orderpage'
 import Payment from './components/Payment/Payment'
+import Ticket from './components/Ticket/Ticket'
 
 
 class App extends Component{
@@ -21,6 +22,7 @@ class App extends Component{
           <Route path="/movie" component={Movie} />
           <Route path="/order" component={Orderpage} />
           <Route path="/payment" component={Payment} />
+          <Route path="/ticket" component={Ticket} />
         </Switch>
       </BrowserRouter>
 

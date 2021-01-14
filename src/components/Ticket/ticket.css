@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+.containerTicket {
+    background-color: #5F2EEA;
+    padding: 50px 150px;
+}
+.ticket-paper {
+    background-color: white;
+    padding: 100px 50px;
+}
+.ticket-top-left {
+    background-color: #5F2EEA;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding: 10px 50px 0px;    
+    border-top-left-radius: 10px;
+}
+.ticket-top-left p {
+    font-family: 'Mulish',sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.ticket-top-right {
+    background-color: #5F2EEA;
+    width: 30%;
+    padding: 10px 0px 0px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-left: 2px #dedede dashed;
+}
+.ticket-logo {
+    height: 30.18px;
+    margin-top: 5px;
+}
+.ticket-bottom-left {
+    width: 70%;
+    border-left: 1px #dedede solid;
+    border-bottom: 1px #dedede solid;;
+    border-bottom-left-radius: 10px;
+    padding: 10px 50px 0px;
+}
+
+.ticket-detail-1 p{
+    font-family: 'Mulish',sans-serif;
+    text-align: left;
+    font-size: 12px;
+}
+
+.ticket-detail-1 .h5{
+    font-family: 'Mulish',sans-serif;
+    text-align: left;
+    font-size: 16px;    
+    color: black;
+    font-weight: bold;
+}
+
+.ticket-detail-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.ticket-detail-2 p{
+    font-size: 12px;
+    font-family: 'Mulish',sans-serif;
+    text-align: left;
+}
+.ticket-detail-2 .h5 {
+    font-size: 16px;
+    font-family: 'Mulish',sans-serif;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+.ticket-detail-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-detail-3 p{
+    font-size: 12px;
+    font-family: 'Mulish',sans-serif;
+    text-align: left;
+}
+
+.ticket-detail-3 .h5 {
+    font-size: 16px;
+    font-family: 'Mulish',sans-serif;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+.ticket-detail-3 .h4 {
+    font-size: 24px;
+    font-family: 'Mulish',sans-serif;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+.ticket-bottom-right div {
+    height: 186px;
+    margin: 10% 17%;
+}
+.ticket-bottom-right {
+    width: 30%;
+    border-right: 1px #dedede solid;
+    border-bottom: 1px #dedede solid;
+    border-left: 2px #dedede dashed;
+    border-bottom-right-radius: 10px;
+}
+.Ticker-btn {
+    display: flex;
+    justify-content: center;
+}

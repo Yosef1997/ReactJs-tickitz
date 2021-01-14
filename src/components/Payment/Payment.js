@@ -25,32 +25,41 @@ export default class Payment extends Component {
             <React.Fragment>
                 <Navbar />
                 <Container fluid className='containerPayment'>
+                    <Row className="payment-mobile pt-3 pb-3">
+                        <Col>
+                            <div className="pay-detail">
+                                <p className="text-muted">Total payment</p>
+                                <p className="text-dark h3">$30,00</p>
+                            </div>
+                        </Col>
+                    </Row>
                     <Row className="payment-paper p-5">
                         <Col md={8}>
-                            <div className="Payment-row1">
+
+                            <div className="Payment-row1 payment-web">
                                 Payment Info
                             </div>
-                            <div className="Payment-row2 p-5 mt-3">
+                            <div className="Payment-row2 payment-web p-5 mt-3">
                                 <div className="pay-detail">
                                     <p className="text-muted">Date & time</p>
                                     <p className="text-dark">Tuesday, 07 July 2020 at 02:00pm</p>
                                 </div>
-                                <hr />
+                                <hr></hr>
                                 <div className="pay-detail">
                                     <p className="text-muted">Movie title</p>
                                     <p className="text-dark">Spider-Man: Homecoming</p>
                                 </div>
-                                <hr />
+                                <hr></hr>
                                 <div className="pay-detail">
                                     <p className="text-muted">Cinema name</p>
                                     <p className="text-dark">CineOne21 Cinema</p>
                                 </div>
-                                <hr />
+                                <hr></hr>
                                 <div className="pay-detail">
                                     <p className="text-muted">Number of tickets</p>
                                     <p className="text-dark">3 pieces</p>
                                 </div>
-                                <hr />
+                                <hr></hr>
                                 <div className="pay-detail">
                                     <p className="text-muted">Total payment</p>
                                     <p className="text-dark h3">$30,00</p>
@@ -70,7 +79,7 @@ export default class Payment extends Component {
                                     <div>
                                         <Button variant="outline-light" className="btn-pay"><img src={gopay} alt="..." /></Button>
                                     </div>
-                                    <div>
+                                    <div className="payment-web">
                                         <Button variant="outline-light" className="btn-pay"><img src={Paypal} alt="..." /></Button>
                                     </div>
                                 </div>
@@ -84,7 +93,7 @@ export default class Payment extends Component {
                                     <div>
                                         <Button variant="outline-light" className="btn-pay"><img src={BRI} alt="..." /></Button>
                                     </div>
-                                    <div>
+                                    <div className="payment-web">
                                         <Button variant="outline-light" className="btn-pay"><img src={OVO} alt="..." /></Button>
                                     </div>
                                 </div>
@@ -98,12 +107,12 @@ export default class Payment extends Component {
                                     <Link to="/" className="text-link ml-1">See how it work</Link>
                                 </div>
                             </div>
-                            <div className="Payment-row4 mt-5">
+                            <div className="Payment-row4 payment-web mt-5">
                                 <div>
                                     <Link to="/movie"><Button className="btn-previous">Previous step</Button></Link>
                                 </div>
                                 <div>
-                                    <Link to="/payment"><Button className="btn-pay-your-order">Pay your order</Button></Link>
+                                    <Link to="/ticket"><Button className="btn-pay-your-order">Pay your order</Button></Link>
                                 </div>
                             </div>
                         </Col>
@@ -129,7 +138,8 @@ export default class Payment extends Component {
                                         <p>Fill your data correctly.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>                            
+                            <Link to="/ticket" className=""><Button className="btn-pay-your-order-mobile w-100 mt-4">Pay your order</Button></Link>                          
                         </Col>
                     </Row>
                 </Container>
