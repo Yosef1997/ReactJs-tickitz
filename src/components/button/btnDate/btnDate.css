@@ -1,0 +1,19 @@
+
+.btn-Date {
+    display: flex;
+    justify-content: left;
+    border: 0.1px #dedede solid;
+    height: 38px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+.date {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+.date:hover {
+    border: none;
+    background-color: transparent;
+}

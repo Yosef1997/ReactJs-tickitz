@@ -10,6 +10,7 @@ import Payment from './components/Payment/Payment'
 import Ticket from './components/Ticket/Ticket'
 import Profil from './components/Profil/Profil'
 import OrderHistory from './components/Order-History/orderHistory'
+import Admin from './components/Admin/admin'
 
 
 class App extends Component{
@@ -27,6 +28,7 @@ class App extends Component{
           <Route path="/ticket" component={Ticket} />
           <Route path="/profil" component={Profil} />
           <Route path="/orderhistory" component={OrderHistory} />
+          <Route path="/admin" component={Admin} />
         </Switch>
       </BrowserRouter>
 

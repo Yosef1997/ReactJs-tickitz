@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.container-admin {
+    background-color: whitesmoke;
+    padding: 56px 70px;
+}
+.admin-row1 {
+    font-family: 'Mulish',sans-serif;
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+.admin-row2 {
+    background-color: white;
+    padding: 56px 40px;
+}
+.admin-row2-col1 img{
+    border: 0.1px #dedede solid;
+    border-radius: 8px;
+    padding: 20px;
+}
+.admin-row2-col2 {
+    font-size: 16px;
+    color: #4E4B66;
+    font-weight: 400;
+}
+.admin-row2-col2-duration {
+    width: 50%;
+}

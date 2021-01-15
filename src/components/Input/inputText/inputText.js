@@ -6,7 +6,7 @@ export default class inputEmail extends Component {
     render() {
         return (
             
-            <Form.Control className="w-10" type="text" placeholder="" />
+            <Form.Control className="inputText" type="text" placeholder="" />
            
         )
     }
