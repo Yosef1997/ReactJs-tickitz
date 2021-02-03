@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './home.css'
 import { Container, Row, Col, Button, Card, FormControl } from 'react-bootstrap'
+// import {default as axios} from 'axios'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Spiderman from '../../assets/Rectanglespiderman.jpg'
@@ -14,9 +15,24 @@ import Tenet from '../../assets/Rectangle139tenet.jpg'
 import Witcher from '../../assets/Rectangle139thewitcher.jpg'
 import { Link } from 'react-router-dom'
 import BtnMonth from '../button/btnMonth/BtnMonth'
+import http from '../helper/http'
 
 export default class Index extends Component {
+    state = {
+        movies: []
+    }
+    async componentDidMount() {
+        const response = await http().get('/movies')
+        this.setState({
+            movies: response.data.results
+        })
+    }
+    goToDetail = (id)=> {
+        this.props.history.push(id, {movieId: id})
+    }
     render() {
+        const { movies } = this.state
+        const {REACT_APP_API_URL : API_URL} = process.env
         return (
             <div>
                 <Navbar />
@@ -42,39 +58,48 @@ export default class Index extends Component {
                     </Row>
                     <Row className="home-row3">
                         <Col className="home-col4">
+                            {movies.map(movies=> {
+                                return (
+                                    <Col key={String(movies.id)}>
+                                        <Link to={`/movies/${movies.id}`}>
+                                            <img src={API_URL.concat(`/${movies.picture}`)}  className="movie-picture" style={{ height: '18rem' }} alt="..." />
+                                        </Link>
+                                    </Col>
+                                )
+                            })}
                             <div >
                                 <Link to="/movie">
-                                    <img src={Spiderman2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                    <img src={Spiderman2} style={{ height: '18rem' }} className="movie-picture" alt="..." />
                                 </Link>
                             </div>
                             <div>
                                 <Link to="/movie">
-                                    <img src={Lion2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                    <img src={Lion2} style={{ height: '18rem' }} className="movie-picture" alt="..." />
                                 </Link>
                             </div>
                             <div>
                                 <Link to="/movie">
-                                    <img src={Johnwick} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                    <img src={Johnwick} style={{ height: '18rem' }} className="movie-picture" alt="..." />
                                 </Link>
                             </div>
                             <div>
                                 <Link to="/movie">
-                                    <img src={Lion2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                    <img src={Lion2} style={{ height: '18rem' }} className="movie-picture" alt="..." />
                                 </Link>
                             </div>
                             <div>
                                 <Link to="/movie">
-                                    <img src={Spiderman2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                    <img src={Spiderman2} style={{ height: '18rem' }} className="movie-picture" alt="..." />
                                 </Link>
                             </div>
                             <div>
                                 <Link to="/movie">
-                                    <img src={Lion2} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                    <img src={Lion2} style={{ height: '18rem' }} className="movie-picture" alt="..." />
                                 </Link>
                             </div>
                             <div>
                                 <Link to="/movie">
-                                    <img src={Johnwick} style={{ height: '18rem' }} className="p-3" alt="..." />
+                                    <img src={Johnwick} style={{ height: '18rem' }} className="movie-picture" alt="..." />
                                 </Link>
                             </div>
                         </Col>

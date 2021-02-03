@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import './Signin.css'
 import Logo from '../../assets/tickitzwhite.png'
 import Purplelogo from '../../assets/tickitzpurple.png'
@@ -7,8 +7,28 @@ import Eyelogo from '../../assets/eye.jpg'
 import Googlelogo from '../../assets/Google-logo.jpg'
 import Facebooklogo from '../../assets/fb-logo.jpg'
 import {Link} from 'react-router-dom'
+import { connect } from 'react-redux'
+import { login } from '../redux/action/auth'
+
 
 class Signin extends Component {
+    state = {
+        email: '',
+        password: ''
+    }
+    submitData = (e) => {
+        e.preventDefault();
+        const { email, password } = this.state
+        this.props.login(email, password)
+    }
+    componentDidUpdate() {
+        if (this.props.auth.token) {
+            this.props.history.push('/')
+        }
+    }
+    changeText = (event) => {
+        this.setState({ [event.target.name]: event.target.value })
+    }
     render() {
         return (
             <Container fluid>
@@ -39,15 +59,16 @@ class Signin extends Component {
                         </Row>
                         <Row>
                             <Col>
-                                <div className="p-3">
+                                <Form onSubmit={this.submitData} className="p-3">
+                                {this.props.auth.errorMsg !== '' && <Alert variant="danger">{this.props.auth.errorMsg}</Alert>}
                                     <Form.Group controlId="formBasicEmail">
                                         <Form.Label>Email address</Form.Label>
-                                        <Form.Control type="email" placeholder="Enter email" />
+                                        <Form.Control name="email" onChange={(event) => this.changeText(event)} type="text" placeholder="Enter email" />
                                     </Form.Group>
                                     <Form.Group controlId="formBasicPassword">
                                         <Form.Label>Password</Form.Label>
                                         <span className="password">
-                                            <Form.Control className="input-password" type="password" placeholder="Password"></Form.Control>
+                                            <Form.Control className="input-password" name="password" onChange={(event) => this.changeText(event)} type="password" placeholder="Password"></Form.Control>
                                             <Button className="btn-password" type="submit">
                                                 <img src={Eyelogo} alt="..." />
                                             </Button>
@@ -56,10 +77,10 @@ class Signin extends Component {
                                     <Form.Group controlId="formBasicCheckbox">
                                         <Form.Check type="checkbox" label="I agree to terms & conditions" />
                                     </Form.Group>
-                                    <Link to="/">
+                                    
                                         <Button className="btn-signin" type="submit">Sign In</Button>
-                                    </Link>
-                                </div>
+                                    
+                                </Form>
                             </Col>
                         </Row>
                         <Row>
@@ -103,4 +124,9 @@ class Signin extends Component {
     }
 }
 
-export default Signin
+const mapStateToProps = state => ({
+    auth: state.auth
+})
+const mapDispatchToProps = { login }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Signin)

@@ -3,18 +3,38 @@ import Navbar from '../Navbar/Navbar'
 import './Moviedetail.css'
 import Footer from '../Footer/Footer'
 import { Container, Row, Col, ButtonGroup, Dropdown } from 'react-bootstrap'
-import Spiderman2 from '../../assets/Rectangle119spiderman.png'
+// import Spiderman2 from '../../assets/Rectangle119spiderman.png'
 import Calender from '../../assets/calender-icon.png'
-import Location from '../../assets/location.png'
+import checkPoint from '../../assets/location.png'
 import Cinemacard from '../Cinemacard/Cinemacard'
 import cinemaList from '../dummy/CinemaList'
+import http from '../helper/http'
 // import { Link } from 'react-router-dom'
 
 export default class Index extends Component {
     state = {
-        cinemaList: cinemaList
+        movie: {},
+        location: {},
+        cinemaList
+    }
+    async componentDidMount() {
+        const { id } = this.props.match.params
+        const response = await http().get(`/movies/${id}`)
+        const responseLocation = await http().get(`/location`)
+        // const responseCinemas = await http().get('/cinemas')
+        this.setState({
+            movie: response.data.results
+        })
+        this.setState({
+            location: responseLocation.data.results
+        })
+        // this.setState({
+        //     cinemas: responseCinemas.data.results
+        // })
     }
     render() {
+        const { movie, location } = this.state
+        const { REACT_APP_API_URL: API_URL } = process.env
         return (
             <div>
                 <Navbar />
@@ -22,45 +42,38 @@ export default class Index extends Component {
                     <Row className="mt-5">
                         <Col md={4} className="col1">
                             <div>
-                                <img src={Spiderman2} className="poster" alt="..." />
+                                <img src={API_URL.concat(`/${movie.picture}`)} className="poster" alt="..." />
                             </div>
                         </Col>
                         <Col md={8} className="col2">
                             <div className="detail1 d-flex flex-column justify-content-start">
-                                <h3>Spider-Man: Homecoming</h3>
-                                <p>Adventure, Action, Sci-Fi</p>
+                                <h3>{movie.name}</h3>
+                                <p>{movie.genre}</p>
                             </div>
                             <div className="detail2 d-flex flex">
                                 <div className="w-50">
                                     <p className="w-50">Release date</p>
-                                    <h5 className="w-50">June 28, 2017</h5>
+                                    <h5 className="w-50">{movie.releaseDate}</h5>
                                 </div>
                                 <div className="w-50">
                                     <p className="w-50">Directed by</p>
-                                    <h5 className="w-50">Jon Watss</h5>
+                                    <h5 className="w-50">{movie.director}</h5>
                                 </div>
                             </div>
                             <div className="detail2  d-flex flex">
                                 <div className="w-50">
                                     <p className="w-50">Duration</p>
-                                    <h5 className="w-50">2 hours 13 minutes</h5>
+                                    <h5 className="w-50">{movie.duration}</h5>
                                 </div>
                                 <div className="w-50">
                                     <p className="w-50">Casts</p>
-                                    <h5 className="w-100">Tom Holland, Michael Keaton, Robert Downey Jr., ...</h5>
+                                    <h5 className="w-100">{movie.stars}</h5>
                                 </div>
                             </div>
                             <hr />
                             <div className="Synopsis">
                                 <h3>Synopsis</h3>
-                                <p>
-                                    Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt
-                                    May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his
-                                    normal daily routine -
-                                    distracted by thoughts of proving himself to be more than just your friendly neighborhood
-                                    Spider-Man -
-                                    but when the Vulture emerges as a new villain, everything that Peter holds most important will
-                                    be threatened.
+                                <p>{movie.description}
                                 </p>
                             </div>
                         </Col>
@@ -78,27 +91,32 @@ export default class Index extends Component {
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className="super-colors">
                                         <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                                        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>                                        
+                                        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
                                         <Dropdown.Item eventKey="3">Separated link</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>{' '}
                                 <Dropdown as={ButtonGroup}>
                                     <Dropdown.Toggle className="btn-dropmovie" id="dropdown-custom-1">
-                                        <img src={Location} class="img-fluid" alt="..." />
+                                        <img src={checkPoint} class="img-fluid" alt="..." />
                                     Location
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className="super-colors">
-                                        <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                                        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                                        <Dropdown.Item eventKey="3">Separated link</Dropdown.Item>
+                                        {location.map(location => {
+                                            return (
+                                                <Dropdown.Item >{location.city}</Dropdown.Item>
+                                            )
+                                        })}
+
+
+
                                     </Dropdown.Menu>
                                 </Dropdown>{' '}
                             </div>
                         </Col>
                     </Row>
                     <Row className="sectionMovie-2 p-5">
-                        {this.state.cinemaList.map((item, index)=>{
-                            return(
+                        {this.state.cinemaList.map((item, index) => {
+                            return (
                                 <Col md={4}>
                                     <Cinemacard data={item} />
                                 </Col>
@@ -107,8 +125,8 @@ export default class Index extends Component {
                         }
                     </Row>
                     <Row className="sectionMovie-2 p-5">
-                        {this.state.cinemaList.map((item, index)=>{
-                            return(
+                        {this.state.cinemaList.map((item, index) => {
+                            return (
                                 <Col md={4}>
                                     <Cinemacard data={item} />
                                 </Col>
@@ -119,7 +137,7 @@ export default class Index extends Component {
                     <Row className="row8 p-5 sectionMovie-2 text-center">
                         <Col>
                             View All
-                        </Col>                       
+                        </Col>
                     </Row>
                 </Container>
                 <Footer />

@@ -51,6 +51,9 @@
 .home-col7 div {
     margin-right: 20px;
 }
+.movie-picture {
+    border-radius: 8px;
+}
 .title {
     margin-top: 5px;
     width: 100%;
