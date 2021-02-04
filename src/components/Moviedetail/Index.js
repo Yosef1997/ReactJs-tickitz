@@ -7,34 +7,38 @@ import { Container, Row, Col, ButtonGroup, Dropdown } from 'react-bootstrap'
 import Calender from '../../assets/calender-icon.png'
 import checkPoint from '../../assets/location.png'
 import Cinemacard from '../Cinemacard/Cinemacard'
-import cinemaList from '../dummy/CinemaList'
+// import cinemaList from '../dummy/CinemaList'
 import http from '../helper/http'
+import {parsingDMY} from '../helper/date'
 // import { Link } from 'react-router-dom'
 
 export default class Index extends Component {
     state = {
         movie: {},
-        location: {},
-        cinemaList
+        location: [],
+        showdate: [],
+        cinemas : []
     }
     async componentDidMount() {
         const { id } = this.props.match.params
         const response = await http().get(`/movies/${id}`)
         const responseLocation = await http().get(`/location`)
-        // const responseCinemas = await http().get('/cinemas')
+        const responseDate = await http().get(`/showdate`)
+        const responseCinemas = await http().get('/cinemas')
         this.setState({
-            movie: response.data.results
+            movie: response.data.results,
+            location: responseLocation.data.results,
+            showdate: responseDate.data.results,
+            cinemas : responseCinemas.data.results,
         })
-        this.setState({
-            location: responseLocation.data.results
-        })
-        // this.setState({
-        //     cinemas: responseCinemas.data.results
-        // })
+    }
+    addBook = (id)=> {
+        this.props.history.push(id, {movieId: id})
     }
     render() {
-        const { movie, location } = this.state
+        const { movie, location, showdate, cinemas } = this.state
         const { REACT_APP_API_URL: API_URL } = process.env
+        const { id } = this.props.match.params
         return (
             <div>
                 <Navbar />
@@ -53,7 +57,7 @@ export default class Index extends Component {
                             <div className="detail2 d-flex flex">
                                 <div className="w-50">
                                     <p className="w-50">Release date</p>
-                                    <h5 className="w-50">{movie.releaseDate}</h5>
+                                    <h5 className="w-50">{parsingDMY(movie.releaseDate)}</h5>
                                 </div>
                                 <div className="w-50">
                                     <p className="w-50">Directed by</p>
@@ -90,9 +94,11 @@ export default class Index extends Component {
                                         Date
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className="super-colors">
-                                        <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                                        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                                        <Dropdown.Item eventKey="3">Separated link</Dropdown.Item>
+                                        {showdate.map(showdate => {
+                                            return(
+                                                <Dropdown.Item >{parsingDMY(showdate.date)}</Dropdown.Item>
+                                            )
+                                        })}
                                     </Dropdown.Menu>
                                 </Dropdown>{' '}
                                 <Dropdown as={ButtonGroup}>
@@ -107,15 +113,13 @@ export default class Index extends Component {
                                             )
                                         })}
 
-
-
                                     </Dropdown.Menu>
                                 </Dropdown>{' '}
                             </div>
                         </Col>
                     </Row>
                     <Row className="sectionMovie-2 p-5">
-                        {this.state.cinemaList.map((item, index) => {
+                        {cinemas.map(item => {
                             return (
                                 <Col md={4}>
                                     <Cinemacard data={item} />
@@ -125,10 +129,10 @@ export default class Index extends Component {
                         }
                     </Row>
                     <Row className="sectionMovie-2 p-5">
-                        {this.state.cinemaList.map((item, index) => {
+                        {cinemas.map(item => {
                             return (
                                 <Col md={4}>
-                                    <Cinemacard data={item} />
+                                    <Cinemacard movieId={id} data={item} />
                                 </Col>
                             )
                         })

@@ -29,9 +29,8 @@ class App extends Component {
             <Route path="/sign-up" component={Signup} />
             <Route path="/sign-in" component={Signin} />
             <Route path="/Forgetpass" component={Forgetpass} />
-            <PrivateRoute path='/movie' privateComponent={Movie} />
-            <Route path="/movies/:id" component={Movie} />
-            <Route path="/order" component={Orderpage} />
+            <PrivateRoute path='/movies/:id' privateComponent={Movie} />
+            <Route path="/order/:id" component={Orderpage} />
             <Route path="/payment" component={Payment} />
             <Route path="/ticket" component={Ticket} />
             <Route path="/profil" component={Profil} />

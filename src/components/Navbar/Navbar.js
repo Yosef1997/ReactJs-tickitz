@@ -16,7 +16,7 @@ class Navbar extends Component {
                                 <FormControl type="text" placeholder="Search" className="input-search-mobile sm-2" />
                                 <Button type="submit" className="btn-search"><img src={Search} alt=".." /></Button>{' '}
                             </div>
-                            <Nav.Link href="#Movies" className="navlink">Movies</Nav.Link>
+                            <Nav.Link href="#nowShowing" className="navlink">Movies</Nav.Link>
                             <Nav.Link href="#Cinemas" className="navlink">Cinemas</Nav.Link>
                             <Nav.Link href="#Buy-Ticket" className="navlink">Buy Ticket</Nav.Link>
                             <NavDropdown className="nav-mobile navlink mr-1" title="Location" id="collasible-nav-dropdown">

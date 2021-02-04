@@ -56,7 +56,7 @@ export default class Index extends Component {
                             <p className="text-right">View All</p>
                         </Col>
                     </Row>
-                    <Row className="home-row3">
+                    <Row className="home-row3" id='nowShowing'>
                         <Col className="home-col4">
                             {movies.map(movies=> {
                                 return (
