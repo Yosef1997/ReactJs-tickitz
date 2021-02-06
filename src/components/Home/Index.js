@@ -27,9 +27,9 @@ export default class Index extends Component {
             movies: response.data.results
         })
     }
-    goToDetail = (id)=> {
-        this.props.history.push(id, {movieId: id})
-    }
+    // goToDetail = (id)=> {
+    //     this.props.history.push(id, {movieId: id})
+    // }
     render() {
         const { movies } = this.state
         const {REACT_APP_API_URL : API_URL} = process.env

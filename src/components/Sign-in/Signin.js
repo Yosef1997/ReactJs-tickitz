@@ -23,7 +23,8 @@ class Signin extends Component {
     }
     componentDidUpdate() {
         if (this.props.auth.token) {
-            this.props.history.push('/')
+            const {from = null} = this.props.location.state
+            this.props.history.push((from && from.pathname) || '/')
         }
     }
     changeText = (event) => {

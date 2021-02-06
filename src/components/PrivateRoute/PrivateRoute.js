@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Route, Redirect } from 'react-router-dom'
 import {connect} from 'react-redux'
+import { autoLogin } from '../redux/action/auth'
 
 class PrivateRoute extends Component {
   
@@ -22,5 +23,6 @@ class PrivateRoute extends Component {
 const mapStateToprops = state => ({
   auth: state.auth
 })
+const mapDispatchToProps = {autoLogin}
 
-export default connect(mapStateToprops)(PrivateRoute)
+export default connect(mapStateToprops, mapDispatchToProps)(PrivateRoute)

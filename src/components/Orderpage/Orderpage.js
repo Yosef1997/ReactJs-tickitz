@@ -13,6 +13,9 @@ import BtnSeatOrder from '../button/btnOrderpage/BtnSeatOrder';
 
 
 export default class Orderpage extends Component {
+    componenetDidMount (){
+        console.log(this.props)
+    }
     render() {
         return (
             <React.Fragment>

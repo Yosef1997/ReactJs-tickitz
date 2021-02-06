@@ -6,12 +6,12 @@ import { Card, Col, Row, Button } from 'react-bootstrap'
 export default class Cinemacard extends Component {
 
     bookNow = (id) => {
-        const {history, movieId} = this.props;
-        history.push(`/order/${id}`, {movieId})
+        const { history} = this.props
+        history.push(`/order/${id}`)
     }
     render() {
         const { REACT_APP_API_URL: API_URL } = process.env
-        const {data} = this.props
+        const { data } = this.props
         return (
             <Card body className="CinemaCard shadow">
                 <Row>
@@ -24,27 +24,24 @@ export default class Cinemacard extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    
-                            <Col md={3}>
-                                <small>{data.time}</small>
-                            </Col>
-                        
+                    <Col md={3}>
+                        <small>{data.time}</small>
+                    </Col>
+
                 </Row>
                 <Row>
-                    
-                            <Col md={3}>
-                                <small>{data.time}</small>
-                            </Col>
+
+                    <Col md={3}>
+                        <small>{data.time}</small>
+                    </Col>
                 </Row>
-
-
                 <Row className="mt-3">
                     <Col>
                         Price
                         </Col>
                     <Col className="text-right">
                         {data.priceOneSeat}
-                        </Col>
+                    </Col>
                 </Row>
                 <Row className="mt-3">
                     <Col className="text-center">

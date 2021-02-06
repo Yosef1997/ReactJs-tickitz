@@ -19,19 +19,17 @@ export default class Index extends Component {
         showdate: [],
         cinemas : []
     }
-    async componentDidMount() {
-        const { id } = this.props.match.params
-        const response = await http().get(`/movies/${id}`)
-        const responseLocation = await http().get(`/location`)
-        const responseDate = await http().get(`/showdate`)
-        const responseCinemas = await http().get('/cinemas')
+    async componentDidMount(){
+        const {id} = this.props.match.params
+        const dataMovie = await http().get(`/movies/${id}`)
+        const dataLocation = await http().get(`/location`)
+        console.log(dataLocation)
         this.setState({
-            movie: response.data.results,
-            location: responseLocation.data.results,
-            showdate: responseDate.data.results,
-            cinemas : responseCinemas.data.results,
+            movie: dataMovie.data.results,
+            Location: dataLocation.data.results
         })
     }
+    
     addBook = (id)=> {
         this.props.history.push(id, {movieId: id})
     }
@@ -131,7 +129,7 @@ export default class Index extends Component {
                     <Row className="sectionMovie-2 p-5">
                         {cinemas.map(item => {
                             return (
-                                <Col md={4}>
+                                <Col key={String(item.id)} md={4}>
                                     <Cinemacard movieId={id} data={item} />
                                 </Col>
                             )

@@ -16,7 +16,7 @@ export const login = (email, password) => {
           payload: results.data.token
          })
       } catch(err) {
-        const {message} = err.response.data
+        const {message} = err.response.message
         dispatch({
           type: 'SET_LOGIN_MESSAGE',
           payload: message
@@ -24,3 +24,7 @@ export const login = (email, password) => {
       }
     }
 }
+export const autoLogin = (payload) => ({
+  type:'LOGIN',
+  payload
+})
