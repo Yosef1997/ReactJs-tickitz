@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.seatOrder {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.seat-label {
+  height: 15px;
+  width: 10%;
+  font-family: 'Mulish',sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  color: #4E4B66;
+}
+.container {
+  display: block;
+  position: relative;
+  margin: 0px 5px;
+  height: 15px;
+  width: 0px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.checkmark-loveNest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  height: 25px;
+  width: 60px;
+  background-color: #F589D7;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container:hover input ~ .checkmark-loveNest {
+  background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #5F2EEA;
+}
+
+.container input:checked ~ .checkmark-loveNest {
+  background-color: #5F2EEA;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: none;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

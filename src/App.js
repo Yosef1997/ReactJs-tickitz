@@ -17,6 +17,7 @@ import Ticket from './components/Ticket/Ticket'
 import Profil from './components/Profil/Profil'
 import OrderHistory from './components/Order-History/orderHistory'
 import Admin from './components/Admin/admin'
+// import test from './components/test/test'
 
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
             <Route path="/profil" component={Profil} />
             <Route path="/orderhistory" component={OrderHistory} />
             <Route path="/admin" component={Admin} />
+            {/* <Route path="/test" component={test} /> */}
           </Switch>
         </BrowserRouter>
       </Provider>

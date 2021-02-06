@@ -31,13 +31,21 @@
 }
 .home-row3 {
     background-color: whitesmoke;
+    padding: 50px;
 }
 .home-col4 {
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    overflow-y: scroll;
     width: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+.home-col4::-webkit-scrollbar {
+    display: none;
+  }
+
 .home-col4 div {
     padding: 20px;
     margin: 5px;

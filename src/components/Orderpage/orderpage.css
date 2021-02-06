@@ -43,6 +43,7 @@
     font-family: 'Mulish',sans-serif;
     font-size: 16px;
     font-weight: bold;
+    padding: 50px 50px 0px ;
 }
 .btn-available {
     background-color: white;
@@ -87,8 +88,10 @@
     color: #5F2EEA ;
     font-size: 24px;
 }
-.note-web {
+.orderNote-Web {
+    padding: 50px;
     display: flex;
+    justify-content: space-evenly;
 
 }
 .note-mobile {
@@ -145,6 +148,39 @@
     background-color: white;
     margin-top: 20px;
     border-radius: 10px;
+}
+
+.orderNoteDetail {
+    display: flex;
+}
+
+.orderNoteColorAvail {
+    width: 26px;
+    height: 26px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.orderNoteColorSold {
+    width: 26px;
+    height: 26px;
+    background-color: #6E7191;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.orderNoteColorSelected {
+    width: 26px;
+    height: 26px;
+    background-color: #5F2EEA;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.orderNoteColorLoveNest {
+    width: 26px;
+    height: 26px;
+    background-color: #F589D7;
+    border-radius: 4px;
+    margin-right: 15px;
 }
 @media only screen and (max-width: 576px) {
     .oreder-web {

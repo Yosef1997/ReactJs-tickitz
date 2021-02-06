@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Container, Col, Row, Button, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './orderpage.css'
-import SeatOrder from '../Seat-order/SeatOrder'
+import SeatOrderLeft from '../Seat-order/SeatOrderLeft'
+import SeatOrderRight from '../Seat-order/SeatOrderRight'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Cineone21 from '../../assets/cineone210.jpg'
@@ -22,7 +23,7 @@ export default class Orderpage extends Component {
                 <Navbar />
                 <Container fluid className="container-orderpage">
                     <Row className="p-3">
-                        <Col md={8}>
+                        <Col lg={8}>
                             <div className="Order-row1 oreder-web">
                                 Movie Selected
                             </div>
@@ -41,17 +42,35 @@ export default class Orderpage extends Component {
                                 <div className="Order-row4">
                                     Screen
                                     </div>
-                                <div className="d-flex">
+                                <div className="d-flex pt-5">
                                     <Col className="mr-0">
-                                        <SeatOrder />
+                                        <SeatOrderLeft />
                                     </Col>
                                     <Col className="ml-0">
-                                        <SeatOrder />
+                                        <SeatOrderRight />
                                     </Col>
                                 </div>
-                                <div className="Order-row5 pl-5">
+                                <div className="Order-row5">
                                     Seating key
                                 </div>
+                                <div className="orderNote-Web">
+                                        <div className="orderNoteDetail"> 
+                                            <div className="orderNoteColorAvail" />
+                                            Available
+                                        </div>
+                                        <div className="orderNoteDetail">
+                                            <div className="orderNoteColorSelected" />
+                                            Selected
+                                        </div>
+                                        <div className="orderNoteDetail">
+                                            <div className="orderNoteColorLoveNest" />
+                                            Love nest
+                                        </div>
+                                        <div className="orderNoteDetail">
+                                            <div className="orderNoteColorSold" />
+                                            Sold
+                                        </div>                                        
+                                    </div>
                                 <div className="note-mobile p-5">
                                     <div class="raw d-flex justify-content-between">
                                         <span class="w-50">
@@ -84,26 +103,7 @@ export default class Orderpage extends Component {
                                                     Sold
                                         </span>
                                         </div>
-                                    </div>
-
-                                    <div className="note-web text-center p-4">
-                                        <Col>
-                                            <input className="btn-available mr-2" type="button" value="" />
-                                            Available
-                                        </Col>
-                                        <Col>
-                                            <input className="btn-selected mr-2" type="button" value="" />
-                                            Selected
-                                        </Col>
-                                        <Col>
-                                            <input className="btn-lovenest mr-2" type="button" value="" />
-                                            Love nest
-                                        </Col>
-                                        <Col>
-                                            <input className="btn-Sold mr-2" type="button" value="" />
-                                            Sold
-                                        </Col>
-                                    </div>
+                                    </div>                                    
                                 </div>
                             </div>
                             <div className="note-mobile choose-seat p-5">
@@ -134,7 +134,7 @@ export default class Orderpage extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={4} className="oreder-web">
+                        <Col lg={4} className="oreder-web">
                             <div className="Order-row1 mb-4">
                                 Order Info
                                 </div>

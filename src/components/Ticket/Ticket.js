@@ -17,6 +17,7 @@ export default class Ticket extends Component {
                 <Container fluid className="containerTicket">
                     <Row className="ticket-paper">
                         <Col>
+                            <div className="circleTicket1"></div>
                             <div className="d-flex">
                                 <div className="ticket-top-left">
                                     <div><img src={Logo} className="ticket-logo" alt="..." /></div>

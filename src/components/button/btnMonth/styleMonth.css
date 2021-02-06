@@ -1,20 +1,41 @@
-.home-col6 {
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.colMonth{
+    overflow-y: scroll;
     display: flex;
-    flex-direction: row;
-    overflow: auto;
-    width: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
-.home-col6 div {
-    margin-right: 20px;
-}
-.home-col6 button {
-    background-color: white;
-    border: 1px #5F2EEA solid;
+
+.colMonth::-webkit-scrollbar {
+    display: none;
+  }
+
+.btnMonth {
+    height: 42px;
+    width: 127px;
+    margin-right: 16px;
+    border: 1px solid #5F2EEA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-weight: 600;
     color: #5F2EEA;
-    width: 6rem;
+    background-color: white;
 }
-.home-col6 button:hover {
-    background-color:#5F2EEA;
-    border: 1px #5F2EEA solid;
-    color:white;
+
+.btnMonth:visited {
+    background-color: #5F2EEA;
+    color: white;
+}
+
+.btnMonth:hover {
+    background-color: #5F2EEA;
+    color: white;
+}
+
+.btnMonth:active {
+    background-color: #5F2EEA;
+    color: white;
 }
